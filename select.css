@@ -1,0 +1,71 @@
+*  {
+     background-color: rgb(168, 207, 207);
+   }
+
+h1,h2
+    {
+        background-color: rgb(153, 166, 177);
+        color :rgb(122, 35, 61) ;
+        text-align :center;
+        border:inset;
+        border-color:rgb(100, 58, 5);
+    }
+
+a
+    {
+        background-color:yellow;
+        font-size : 22px;
+
+    }
+a:active
+    {
+        background-color : rgb(178, 146, 201);
+    }
+[lang= "en"] 
+    {
+        background-color: red;
+    }   
+
+#para1 
+    {
+        background-color: rgb(133, 175, 175);
+        color : rgb(103, 103, 182);
+        text-align :justify;
+    }
+
+.pa1 
+    {
+        font-size: 20px;
+        background-color:rgb(156, 106, 163);
+        color:rgb(223, 202, 202);
+        text-align: justify;
+    }
+
+[title~="jungle"]
+    {
+        border : 8px solid rgb(79, 79, 141);
+    }
+.large 
+   {
+         font-size: 45px;
+         font-family: cursive;
+         text-decoration-line: underline;
+         text-decoration-style: wavy;
+         text-align: justify;
+         background-color: rgb(214, 197, 171);
+         color:rgb(90, 31, 31);
+   }
+.paragraph
+   {
+         font-size: 20px;
+         font-family: Geneva;
+         text-align: left;
+         background-color: rgb(222, 243, 163);
+         color:rgb(59, 28, 51); 
+   }
+
+div[class*="Jungle"]
+   {
+    background-color: rgb(66, 121, 131);
+   }
+
