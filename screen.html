@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Fullscreen Mode</h2>
+<p>Click on the "Open Fullscreen" button to open this page in fullscreen mode.</p>
+
+<button onclick="openFullscreen();">Open Fullscreen</button>
+<button onclick="closeFullscreen();">Close Fullscreen</button>
+
+<script>
+
+var elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { 
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { 
+    elem.msRequestFullscreen();
+  }
+}
+
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+  }
+}
+</script>
+
+<p>Note: Internet Explorer 10 and earlier versions do not support fullscreen mode.</p>
+
+</body>
+</html>
+</body>
+</html>
