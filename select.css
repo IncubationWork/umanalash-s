@@ -24,6 +24,10 @@ a
         font-size : 22px;
 
     }
+a:visited
+    {
+        color:rgb(197, 43, 69);
+    }
 a:active
     {
         background-color : rgb(105, 35, 7);
@@ -42,7 +46,7 @@ input
     }   
 button:default
     {
-        box-shadow:2px 2px 2px 2px rgb(197, 120, 120) ;
+        box-shadow:2px 2px 2px 2px rgb(226, 120, 120) ;
       
     }
 #para1
@@ -59,6 +63,10 @@ button:default
         color :rgb(122, 35, 61);
         font-size : 20px;
     }
+p::selection
+   {
+        background : yellow;
+   }
 p:last-child
     {
         background-color :rgb(147, 147, 216)
@@ -83,7 +91,11 @@ input:in-range
     {
         border:2px solid blue;
         padding : 5px;
-    }   
+    } 
+input:required
+   {
+        background-color:rgb(255, 255, 0)
+   }  
 .pa1 
     {
         font-size: 20px;
