@@ -1,8 +1,8 @@
 
-body
-   {
-      background: lightskyblue;
-   }
+body  
+    {
+        background-color: skyblue;
+    }
 .dolor
     {
       display : flex;
@@ -19,69 +19,56 @@ body
 .header
     {
       background:red;
-      justify-content: center;
-      text-align: center;
-      padding :20px;
+    height:120px;
     }
 .footer
     {
         background : aqua;
-        text-align : center;
-        padding :20px;
+        height:80px;
     }
-.img1
-    {
-        display : flex;
-        flex-wrap: wrap;
-        justify-content:end;
-        align-items:start;
-    }
-.img2
-   {
-        position : relative;
-        display : flex;
-        flex-wrap: wrap;
-        justify-content:end;
-        align-items:center;
-   }  
-.img3
-   {
-       display : flex;
-       flex-wrap: wrap;
-       justify-content:end;
-       align-items:bottom;
-   }
-    
-.aside1
-    {
-        background: lightgreen;
-        justify-content:center;
-        text-align : center;
 
+.flex-container 
+   {
+       text-align:center;
+       background-color: orange;  
+       height:500px;
+       flex-flow:row wrap;
+       align-items :flex-end;
+      
     }
-@media all and (min-width : 800px)
-    {
-        .lopo
-        {
-            flex:3;
-        }
-    .aside1  
-        {
-            order : 1;  
-        }
-    .lopo
-        {
-            order : 2;
-        }
-    .footer   
-        {
-            order : 4;
-        }
-     }
-    @media all and (min-width:600px)
+
+.aside1
+    {    
+        
+         background: lightgreen;
+         height : 500px;
+         justify-content:first baseline;
+         text-align :center;
+    
+    }
+
+    @media all and (min-width:800px)
      {
-     .aside1
+     
+    .flex-container
         {
-           flex : 1;
+           flex : 3; 
+        }
+    .aside1
+        {
+           order :1;
+        }
+    .flex-container
+       {
+           order :2;
+       } 
+    .footer 
+        {
+           order :4;
         }
      }
+@media all and (min-width:600px){
+    .aside {
+        flex:1;
+    }
+}
