@@ -1,0 +1,60 @@
+body 
+   {
+      background-color: rgb(148, 219, 219);
+   }
+.lopo
+   {
+      display : flex;
+      flex-flow: row wrap;
+      text-align : center;
+   }  
+.lopo  *
+   {
+      padding : 8px;
+      margin : 10px;
+      flex : 1 100%;
+      border-radius: 8px; 
+   }
+.header
+    {
+        background:rgb(68, 152, 152) ;
+        padding: 50px;
+    }
+.footer 
+    {
+        background : rgb(68, 152, 152);
+        padding : 50px;
+    }
+.navigation
+    {
+        background :lightgreen;
+        padding : 50px;
+    }
+.cs
+    {
+        flex : 1;
+    }
+.content
+    {
+        background : red;
+     
+        flex-direction :row;
+        
+        padding : 80px;
+    }
+.section 
+    {     
+        background: darkblue;
+        
+        flex-direction :row;
+    
+        padding : 80px;
+    }
+.aside
+    {
+        background :greenyellow;
+        flex : 1;
+        flex-direction :column;
+        flex-basis : 75%;
+        padding : 60px;
+    }

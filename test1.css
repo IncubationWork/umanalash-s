@@ -19,7 +19,7 @@ body
 .header
     {
       background:red;
-    height:120px;
+      height:120px;
     }
 .footer
     {
@@ -33,17 +33,20 @@ body
        background-color: orange;  
        height:500px;
        flex-flow:row wrap;
+       flex-direction: row;
+       font-size :24px;
        align-items :flex-end;
+       justify-content :space-between;
       
     }
 
 .aside1
     {    
-        
          background: lightgreen;
          height : 500px;
-         justify-content:first baseline;
+         justify-content:center;
          text-align :center;
+         flex-direction :column;
     
     }
 

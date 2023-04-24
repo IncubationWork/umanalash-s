@@ -1,0 +1,52 @@
+
+
+.dolor
+    {
+      display : flex;
+      flex-flow: row wrap;
+      text-align: center;
+      background-color:rgb(175, 218, 236);
+    }
+ .dolor  *
+    {
+       margin :10px;
+       border-radius: 8px;
+       font-size :20px;
+       color : white;
+    }
+.header
+    {
+      background:rgb(82, 169, 166);
+      padding:40px;
+      flex-basis : 100%;
+    }
+.footer
+    {
+        background :rgb(82, 169, 166);
+        padding:40px;
+        flex-basis :100%;
+        order : 3;
+    }
+
+.flex-container 
+   {
+       
+       background-color: orange;  
+       padding-top:200px;
+       flex-direction: row;
+       justify-content: space-between;
+       flex : 5;
+       order : 2;
+     }
+
+.aside1
+    {    
+         background: lightgreen;
+         padding : 180px;
+         flex-direction :column;
+         order : 1;
+         flex : 1;
+    
+    }
+
+   

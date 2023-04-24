@@ -1,0 +1,61 @@
+
+.lopo
+   {
+      display : flex;
+      flex-flow: row wrap;
+      text-align : center;
+      background-color: rgb(171, 236, 236);
+   }  
+.lopo  *
+   {
+      margin : 10px;
+      border-radius: 8px; 
+      font-size: 20px;
+      color : white;
+   }
+.header
+    {
+        background:rgb(72, 158, 155) ;
+        padding: 50px;
+        flex-basis: 100%;
+    }
+.footer 
+    {
+        background : rgb(72, 158, 155);
+        padding : 50px;
+        order : 4;
+        flex-basis: 100%;
+    }
+.navigation
+    {
+        background :#4f9f39;
+        padding : 50px;
+        flex-basis: 100%;
+    }
+.cs
+    {
+        flex : 3;
+        flex-direction : row;
+        order : 3;
+        margin: 10px;
+    }
+.content
+    {
+        background :rgb(34, 170, 224);
+        margin : 0 0 10px 0;
+        padding : 60px;
+    }
+.section 
+    {     
+        background:rgb(46, 46, 175);
+        margin : 10px 0 0 0 ;
+        padding : 60px;
+    }
+.aside
+    {
+        background :rgb(5, 246, 5);
+        flex-direction :column;
+        padding : 150px;
+        order : 1;
+         flex : 1;
+    }

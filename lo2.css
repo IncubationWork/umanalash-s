@@ -1,0 +1,82 @@
+body
+  {
+    background-color:lightcyan;
+  }
+.box
+  {
+    display:flex;
+    flex-flow:row wrap;
+    text-align:center;
+  }
+.box > *
+  {
+    margin:30px;
+    padding:30px;
+    flex:1 100%;
+    font-size : 20px;
+  } 
+.c1
+  {
+    background-color: tomato;
+    flex-basis :15%;
+  }
+.c2
+  {
+    background-color: tomato;
+    flex-basis:15%;
+  }
+.c3
+  {
+    background-color: tomato;
+    flex-basis :15%;
+  }
+.c4
+  {
+    background-color: tomato;
+    flex-basis :15%;
+  }
+.c5
+  {
+    background-color: tomato;
+    flex-basis :10%;
+  }
+.c6
+  {
+    background-color:orange;
+    flex-basis :60%;
+  }
+.c7
+  {
+    background-color:blue;
+    flex-basis :34%;
+  }
+.c8
+  {
+    background-color:blue;
+    flex-basis :34%;
+  }
+.c9
+  {
+    background-color:darkgreen;
+    flex-basis :24%;
+  }
+.c10
+  {
+    background-color:darkgreen;
+    flex-basis :24%;
+  }
+.c11
+  {
+    background-color: darkgreen;
+    flex-basis :24%;
+  }
+.c12
+  {
+    background-color: darkgreen;
+    flex-basis :20%;
+  }
+.c13
+  {
+    background-color: yellow;
+    flex-basis :54%;
+  }
