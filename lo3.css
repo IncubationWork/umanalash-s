@@ -3,21 +3,31 @@
    {
       display : flex;
       flex-flow: row wrap;
-      text-align : center;
+      height : 100vh;
+      width : 100vw;
       background-color: rgb(171, 236, 236);
+      text-align: center;
    }  
 .lopo  *
    {
-      margin : 10px;
+      
       border-radius: 8px; 
       font-size: 20px;
       color : white;
+    
+   }
+*
+   {
+     padding : 0;
+     margin : 0;
+     box-sizing: border-box;
    }
 .header
     {
         background:rgb(72, 158, 155) ;
         padding: 50px;
         flex-basis: 100%;
+        margin : 10px;
     }
 .footer 
     {
@@ -25,19 +35,22 @@
         padding : 50px;
         order : 4;
         flex-basis: 100%;
+        margin : 10px;
     }
 .navigation
     {
         background :#4f9f39;
         padding : 50px;
         flex-basis: 100%;
+        margin : 10px;
     }
 .cs
     {
-        flex : 3;
+        flex : 4;
         flex-direction : row;
         order : 3;
         margin: 10px;
+
     }
 .content
     {
@@ -58,4 +71,5 @@
         padding : 150px;
         order : 1;
          flex : 1;
+          margin : 10px;
     }
