@@ -1,52 +1,80 @@
 
-
+body  
+    {
+        background-color: skyblue;
+    }
 .dolor
     {
       display : flex;
       flex-flow: row wrap;
-      text-align: center;
-      background-color:rgb(175, 218, 236);
+      text-align : center; 
     }
- .dolor  *
+ .dolor > *
     {
-       margin :10px;
-       border-radius: 8px;
-       font-size :20px;
-       color : white;
+      padding :8px;
+      margin :10px;
+      flex :   100%;
+      border-radius: 8px;
     }
 .header
     {
-      background:rgb(82, 169, 166);
-      padding:40px;
-      flex-basis : 100%;
+      background:red;
+      padding:80px;
     }
 .footer
     {
-        background :rgb(82, 169, 166);
-        padding:40px;
-        flex-basis :100%;
-        order : 3;
+        background : aqua;
+        height:80px;
     }
 
 .flex-container 
    {
-       
+       text-align:center;
        background-color: orange;  
-       padding-top:200px;
+       height:500px;
+       flex-flow:row wrap;
        flex-direction: row;
-       justify-content: space-between;
-       flex : 5;
-       order : 2;
-     }
+       font-size :24px;
+       align-items :flex-end;
+       justify-content :space-between;
+       flex : 3;
+      
+    }
 
 .aside1
     {    
          background: lightgreen;
-         padding : 180px;
+         height : 500px;
+         justify-content:center;
+         text-align :center;
          flex-direction :column;
          order : 1;
          flex : 1;
     
     }
 
-   
+    @media all and (min-width:800px)
+     {
+     
+    .flex-container
+        {
+           flex : 3; 
+        }
+    .aside1
+        {
+           order :1;
+        }
+    .flex-container
+       {
+           order :2;
+       } 
+    .footer 
+        {
+           order :4;
+        }
+     }
+@media all and (min-width:600px){
+    .aside {
+        flex:1;
+    }
+}

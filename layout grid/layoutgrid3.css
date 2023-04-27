@@ -1,80 +1,75 @@
 *
 {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    background-color: rgb(245, 227, 200);
+    margin :0;
+    padding :0;
+    box-sizing : border-box;
+    background-color:rgb(245, 227, 200);
+    color :white;
 }
 .container
 {
     display:grid;
-    height:100vh;
     width:100vw;
+    height:100vh;
     border :10px solid rgb(245, 227, 200);
-    gap :10px;
     font-size: 50px;
-    
+    grid-template-areas: 
+    'f f f h h h h'
+    's p p p p p f2'
+    's p p p p p .'
+    's b1 . . . b3 f3'
+    's . b2 b2 . . b4'
+    's foot foot foot foot foot foot'
+
+    ;
+    gap : 10px;
+    grid-template-columns : 1fr 1fr 0.5fr 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+
 }
-.c1
-{
+
+.feature{
+    grid-area: f;
     background-color: brown;
-    grid-column:1/span 2;
-   
-    
 }
-.c2
-{
+.header{
+    grid-area: h;
     background-color: black;
-    grid-column :3/span 6;
-    color :white;
-  
 }
-.c3
-{
-    background-color: lightgreen;
-    grid-row:2/span 6;
+.sidebar{
+    grid-area: s;
+    background-color: lawngreen;
 }
-.c4
-{
+.products{
+    grid-area: p;
     background-color: blue;
-    grid-column:2/span 5;
 }
-.c5
-{
+.feature2{
+    grid-area: f2;
     background-color: red;
-    grid-row-start:2;
-    grid-row-end: 2;
 }
-.c6
-{
-    background-color: rgb(249, 201, 209);
-    grid-row-start:4;
-    grid-row-end:4;
+.feature3{
+    grid-area: f3;
+    background-color: red;
 }
-.c7
-{
+.bonus1{
+    grid-area: b1;
     background-color:rgb(249, 201, 209);
-    grid-row-start:4;
-    grid-row-end: 4;
 }
-.c8
-{
-    background-color: red;
-    grid-row-start:4;
-    grid-row-end: 4;
+.bonus2{
+    grid-area: b2;
+    background-color:rgb(249, 201, 209);
 }
-.c9
-{
-    background-color:  rgb(249, 201, 209);
-    grid-row: 5/span 5;
+.bonus3{
+    grid-area: b3;
+    background-color:rgb(249, 201, 209);
 }
-.c10
-{
-    background-color: rgb(249, 201, 209);
-    grid-row: 5/span 5;
+.bonus4{
+    grid-area: b4;
+    background-color:rgb(249, 201, 209);
 }
-.c11
-{
+.footer{
+    grid-area: foot;
     background-color: orange;
-    grid-row: 6;
 }
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layoutgrid6</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+
+        }
+        .layout
+        {
+            
+            display: grid;
+            width:100vw;
+            height:100vh;
+            border: 10px solid white;
+            grid-template-columns:auto;
+            gap:10px;
+
+        }
+        .container
+        {
+            display: grid;
+            width:50vw;
+            height:100vh;
+            border: 10px solid white;
+            float: left;
+            grid-template-areas:
+             'h h h'
+             'm m m'
+             'a1 a2 a3'
+             'f1 f2 f3'
+            ;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 1fr 1fr 100px;
+            gap:10px;
+
+        }
+        header
+        {
+            grid-area: h;
+            border: 10px solid white;
+            background-color: rgb(241, 141, 157);
+
+        }
+        main
+        {
+            grid-area: m;
+            border: 10px solid white;
+            background-color: rgb(241, 141, 157);
+        }
+        .aside1
+        {
+            grid-area: a1;
+            border: 10px solid white;
+            background-color: rgb(241, 141, 157);
+        }
+        .aside2
+        {
+            grid-area: a2;
+            border: 10px solid white;
+            background-color: rgb(241, 141, 157);
+        }
+        .aside3
+        {
+            grid-area: a3;
+            border: 10px solid white;
+            background-color: rgb(241, 141, 157);
+        }
+        .footer1
+        {
+            grid-area: f1;
+            border: 10px solid white;
+            background-color: rgb(241, 141, 157);
+        }
+        .footer2
+        {
+            grid-area: f2;
+            border: 10px solid white;
+            background-color: rgb(241, 141, 157);
+        }
+        .footer3
+        {
+            grid-area: f3;
+            border: 10px solid white;
+            background-color: rgb(241, 141, 157);
+        }
+        .flex-container
+        {
+            display: grid;
+            width:50vw;
+            height:100vh;
+            border: 10px solid white;
+            float:right;
+            
+            grid-template-areas:
+             'h'
+             'm'
+             'f'
+            ;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px  1fr 100px;
+            gap:10px;
+        }
+        header
+        {
+            grid-area: h;
+            border: 10px solid white;
+            background-color: rgb(241, 141, 157);
+        }
+        main
+        {
+            grid-area: m;
+            border: 10px solid white;
+            background-color: rgb(241, 141, 157);
+        }
+        footer
+        {
+            grid-area: f;
+            border: 10px solid white;
+            background-color: rgb(241, 141, 157);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="layout">
+    <div class="container">
+       
+      <header></header>
+      <main></main>
+      <aside class="aside1"></aside>
+      <aside class="aside2"></aside>
+      <aside class="aside3"></aside>
+      <footer class="footer1"></footer>
+      <footer class="footer2"></footer>
+      <footer class="footer3"></footer>
+    </div>
+    <div class="flex-container">
+        
+       <header></header>
+       <main></main>
+       <footer></footer>
+
+    </div>
+</div>
+</body>
+</html>
