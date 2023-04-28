@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layoutgrid8</title>
+    <style>
+      *
+      {
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        background:grey;
+       
+      } 
+      .layout
+      {
+        display:grid;
+        width:100vw;
+        height:100vh;
+        font-size:50px;
+        border:10px solid white;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        
+      } 
+      .lay
+      {
+        display:grid;
+        color: black;
+        text-align: center;
+        background-color:whitesmoke;
+      }
+      .container1
+      {
+        grid-template-columns: 1fr;
+      
+      }
+      .box1
+      {
+         grid-column: 1;
+         grid-row: 2;
+       
+      }
+      .container2
+      {
+        grid-template-columns: 1fr 1fr;
+       
+        gap:20px;
+      }
+      .box2
+      {
+        grid-column: 1 ;
+        grid-row: 2;
+      
+      }
+      .box3
+      {
+        grid-column: 2;
+        grid-row: 2;
+       
+      }
+      .container3
+      {
+        grid-template-columns: 1fr 1fr 1fr;
+       
+        gap:8px;
+      }
+      .box4
+      {
+        grid-column: 1;
+        grid-row: 3;
+      }
+      .box5
+      {
+        grid-column: 2;
+        grid-row: 3;
+      }
+      .box6
+      {
+        grid-column: 3;
+        grid-row: 3;
+      }
+      .container4
+      {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+        gap:7px;
+      }
+      .box7
+      {
+        grid-column: 1;
+        grid-row: 4;
+      }
+      .box8
+      {
+        grid-column: 2;
+        grid-row: 4;
+      }
+      .box9
+      {
+        grid-column: 3;
+        grid-row: 4;
+      }
+      .box10
+      {
+        grid-column: 4;
+        grid-row: 4;
+      }
+      .container5
+      {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        
+        gap:6px;
+      }
+      .box11
+      {
+        grid-column: 1;
+        grid-row: 5;
+      }
+      .box12
+      {
+        grid-column: 2;
+        grid-row:5 ;
+      }
+      .box13
+      {
+        grid-column: 3;
+        grid-row: 5;
+      }
+      .box14
+      {
+        grid-column: 4;
+        grid-row: 5;
+      }
+      .box15
+      {
+        grid-column: 5;
+        grid-row:5;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="layout">
+       <div class="lay container1">
+       <div class="box1">box1</div>
+       </div>
+       <div class="lay container2">
+       <div class="box2">box2</div>
+       <div class="box3">box3</div>
+       </div>
+       <div class="lay container3">
+       <div class="box4">box4</div>
+       <div class="box5">box5</div>
+       <div class="box6">box6</div>
+       </div>
+       <div class="lay container4">
+       <div class="box7">box7</div>
+       <div class="box8">box8</div>
+       <div class="box9">box9</div>
+       <div class="box10">box10</div>
+       </div>
+       <div class="lay container5">
+       <div class="box11">box11</div>
+       <div class="box12">box12</div>
+       <div class="box13">box13</div>
+       <div class="box14">box14</div>
+       <div class="box15">box15</div>
+    </div>
+    </div>
+</body>
+</html>

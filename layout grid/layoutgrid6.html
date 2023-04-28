@@ -6,31 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>layoutgrid6</title>
     <style>
+        
         *
         {
             margin:0;
             padding:0;
             box-sizing:border-box;
-
+            border: 10px solid white;
+            align-content: center;
+            overflow : hidden;
+            
         }
+       
         .layout
         {
             
             display: grid;
             width:100vw;
             height:100vh;
-            border: 10px solid white;
-            grid-template-columns:auto;
-            gap:10px;
-
+            background-color: rgb(222, 60, 122);
+            grid-template-columns:60% 30%;
+            gap : 20px;
+            
         }
         .container
         {
             display: grid;
-            width:50vw;
-            height:100vh;
-            border: 10px solid white;
-            float: left;
+            width:60vw;
+            height:70vh;
+            border: 15px solid white;
+            border-radius: 10px;
             grid-template-areas:
              'h h h'
              'm m m'
@@ -39,7 +44,7 @@
             ;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 100px 1fr 1fr 100px;
-            gap:10px;
+            margin-left: 250px;
 
         }
         header
@@ -47,7 +52,7 @@
             grid-area: h;
             border: 10px solid white;
             background-color: rgb(241, 141, 157);
-
+    
         }
         main
         {
@@ -94,19 +99,20 @@
         .flex-container
         {
             display: grid;
-            width:50vw;
-            height:100vh;
-            border: 10px solid white;
-            float:right;
-            
+            width:15vw;
+            height:50vh;
+            border-radius: 10px;
+            border: 15px solid white;
+            align-self: center;
             grid-template-areas:
              'h'
              'm'
              'f'
             ;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
             grid-template-rows: 100px  1fr 100px;
-            gap:10px;
+            margin-left:300px;
+            
         }
         header
         {
@@ -126,11 +132,13 @@
             border: 10px solid white;
             background-color: rgb(241, 141, 157);
         }
+       
 
 
     </style>
 </head>
 <body>
+   
     <div class="layout">
     <div class="container">
        
@@ -145,9 +153,9 @@
     </div>
     <div class="flex-container">
         
-       <header></header>
-       <main></main>
-       <footer></footer>
+       <header class="header"></header>
+       <main class="main"></main>
+       <footer class="footer"></footer>
 
     </div>
 </div>
