@@ -5,7 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>layoutgrid3</title>
-    <link rel ="stylesheet" href = "layoutgrid4.css">
+<style>
+*
+{
+    margin :0;
+    padding :0;
+    box-sizing : border-box;
+    background-color:rgb(245, 227, 200);
+    color :white;
+}
+.container
+{
+    display:grid;
+    width:100vw;
+    height:100vh;
+    border :10px solid rgb(245, 227, 200);
+    font-size: 50px;
+    grid-template-areas: 
+    'f f f h h h h'
+    's p p p p p f2'
+    's p p p p p .'
+    's b1 . . . b3 f3'
+    's . b2 b2 . . b4'
+    's foot foot foot foot foot foot'
+
+    ;
+    gap : 10px;
+    grid-template-columns : 1fr 1fr 0.5fr 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+
+}
+
+.feature{
+    grid-area: f;
+    background-color: brown;
+}
+.header{
+    grid-area: h;
+    background-color: black;
+}
+.sidebar{
+    grid-area: s;
+    background-color: lawngreen;
+}
+.products{
+    grid-area: p;
+    background-color: blue;
+}
+.feature2{
+    grid-area: f2;
+    background-color: red;
+}
+.feature3{
+    grid-area: f3;
+    background-color: red;
+}
+.bonus1{
+    grid-area: b1;
+    background-color:rgb(249, 201, 209);
+}
+.bonus2{
+    grid-area: b2;
+    background-color:rgb(249, 201, 209);
+}
+.bonus3{                                                                                                                                                                                                                                    
+    grid-area: b3;
+    background-color:rgb(249, 201, 209);
+}
+.bonus4{
+    grid-area: b4;
+    background-color:rgb(249, 201, 209);
+}
+.footer{
+    grid-area: foot;
+    background-color: orange;
+}
+
+</style>
 </head>
 <body>
     <div class ="container">
