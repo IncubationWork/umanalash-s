@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layoutgrid9</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .layout
+        {
+            display:grid;
+            width:100vw;
+            height:100vh;
+            border:10px solid white;
+            gap : 10px;
+            font-size: 20px;
+            grid-template-areas: 
+            'n n n n'
+            'a m m m'
+            'a c1 c2 c3'
+            'a f f f'
+            ;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 100px 2fr 1.5fr 150px;
+
+        }
+        nav
+        {
+            grid-area:n;
+            background-color:#80f7e1;
+            
+        }
+        aside
+        {
+            grid-area: a;
+            background-color:#00fff7;
+           
+        }
+        main
+        {
+            grid-area: m;
+            background-color: #00ffff;
+        }
+        .content1
+        {
+            grid-area: c1;
+            background-color:#00ffcc;
+        }
+        .content2
+        {
+            grid-area: c2;
+            background-color: #7fffd4;
+        }
+        .content3
+        {
+            grid-area: c3;
+            background-color:lightgreen;
+        }
+        footer
+        {
+            grid-area: f;
+            background-color:lightgreen;
+        }
+        
+
+        @media  all and (max-width:800px)
+        {
+           .layout
+           {
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            grid-template-areas: 
+              'n'
+              'a'
+              'm'
+              'c1'
+              'c2'
+              'c3'
+              'f'
+              ;
+              grid-template-columns: 1fr;
+              grid-template-rows: 100px 2fr 2fr 1.5fr 1.5fr 1.5fr 150px;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+      <nav class="nav">NAVBAR</nav>  
+      <aside class="side">SIDEBAR</aside>
+      <main class="main">MAIN</main>
+      <content class="content1">CONTENT1</content>
+      <content class="content2">CONTENT2</content>
+      <content class="content3">CONTENT3</content>
+      <footer class="footer">FOOTER</footer>
+    </div>
+</body>
+</html>

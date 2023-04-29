@@ -35,28 +35,28 @@
         grid-area: h;
         background-color: black;
         color : white;
-        padding : 25px;
+      
     }
     .menu
     {
         grid-area: m;
         background-color: tomato;
         color:white;
-        padding : 25px;
+        
     }
     .hero
     {
         grid-area: h1;
         background-color: rgb(16, 16, 248) ;
         color:white;
-        padding : 150px;
+    
     }
     .main
     {
         grid-area: m1;
         background-color:rgb(1, 1, 19) ;
         color:white;
-        padding:50px;
+    
     }
     .image
     {
@@ -75,6 +75,44 @@
         grid-area: b;
         background-color: rgb(255, 255, 0);
         color:black;
+    }
+    @media (max-width:1280px)
+    {
+        .container
+        {
+            display:grid;
+            width:100vw;
+            height:100vh;
+            grid-template-areas: 
+            'h h h'
+            'h1 h1 h1'
+            'm m1 m1'
+            'm b b'
+            'm e i'
+            ;
+            grid-template-columns: 150px 1fr 1fr;
+            grid-template-rows: 100px 1fr 1fr 1fr 1fr;
+        }
+    }
+    @media (max-width:760px)
+{
+        .container
+        {
+            display:grid;
+            width:100vw;
+            height:100vh;
+            grid-template-areas: 
+            'h'
+            'm'
+            'h1'
+            'm1'
+            'b'
+            'e'
+            'i';
+            
+            grid-template-columns:1fr;
+            grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
     }
     </style>
 </head>
