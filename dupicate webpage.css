@@ -361,14 +361,13 @@ nav
 {
     display:flex;
     width:100vw;
-    height:7vh;
     flex-wrap: nowrap;
     flex-direction:column;
     height:7vh;
 }
 .nav1
 {
-    display:inline-flex;
+    display:flex;
     width:80vw;
     height:7vh;
     margin-left: 10%;
@@ -432,34 +431,12 @@ nav
     border-bottom:0.9px solid rgba(0, 0, 0, 0.278);
     position:relative;
     bottom:310%;
-    margin:5px;
-}
-.container1
-{
-    display:flex;
-    width:80%;
-    height:7vh;
-    flex-direction: row;
-}
-.container2
-{
-    display:flex;
-    width:60vw;
-    height:7vh;
-    flex-direction: row;
-}
-.container3
-{
-    display:flex;
-    width:20vw;
-    height:7vh;
-    flex-direction: row;
+   margin:5px;
+   justify-content: center;
 }
 .colorpalette
 {
-   display:flex;
-   width:40vw;
-   height:7vh;
+   display:inline-flex;
    gap:5px;
    margin:17px;
 }
@@ -468,8 +445,6 @@ nav
     width:25px;
     height:25px;
     border-radius: 3px;
-    position: relative;
-    left:120%;
 }
 .box1
 {
@@ -532,131 +507,12 @@ nav
 {
     background:black ;
 }
-.tooltip
-{
-    position:absolute;
-    left:50%;
-    top:0;
-    transform:translateX(-50%);
-    background-color:#000;
-    color:#fff;
-    white-space: nowrap;
-    padding:5px 7px;
-    opacity: 0;
-    font-size: 10px;
-    transition: opacity 0.5s ease;
-}
-.tooltip::before
-{
-    content:" ";
-    position: absolute;
-    bottom:100%;
-    left:50%;
-    transform: translateX(-50);
-    border:15px solid;
-    border-color:#ffff #ffff #fff #ffff;
-}
-.box1:hover .tooltip
-{
-    top:140%;
-    visibility:visible;
-    opacity:1;
-}
-.box2:hover .tooltip
-{
-    top:140%;
-    visibility:visible;
-    opacity:1;
-}
-.box3:hover .tooltip
-{
-    top:140%;
-    visibility:visible;
-    opacity:1;
-}
-.box4:hover .tooltip
-{
-    top:140%;
-    visibility:visible;
-    opacity:1;
-}
-.box5:hover .tooltip
-{
-    top:140%;
-    visibility:visible;
-    opacity:1;
-}
-.box6:hover .tooltip
-{
-    top:140%;
-    visibility:visible;
-    opacity:1;
-}
-.box7:hover .tooltip
-{
-    top:140%;
-    visibility:visible;
-    opacity:1;
-}
-.box8:hover .tooltip
-{
-    top:140%;
-    visibility:visible;
-    opacity:1;
-}
-.box9:hover .tooltip
-{
-    top:140%;
-    visibility:visible;
-    opacity:1;
-}
-.box10:hover .tooltip
-{
-    top:140%;
-    visibility:visible;
-    opacity:1;
-}
-.box11:hover .tooltip
-{
-    top:140%;
-    visibility:visible;
-    opacity:1;
-}
-.box12:hover .tooltip
-{
-    top:140%;
-    visibility:visible;
-    opacity:1;
-}
-.box13:hover .tooltip
-{
-    top:140%;
-    visibility:visible;
-    opacity:1;
-}
-.box15:hover .tooltip
-{
-    top:140%;
-    visibility:visible;
-    opacity:1;
-}
-.box15:hover .tooltip
-{
-    top:140%;
-    visibility:visible;
-    opacity:1;
-}
-.image
+.pattern
 {
     display:inline-flex;
-    width:20vw;
-    height:7vh;
-    position: relative;
-    left:30%;
 }
-
 .img3
-{   display:block;
+{
     background-image:url(img1.png);
     background-position:-760px -895px;
     width:64px;
@@ -664,9 +520,7 @@ nav
     transform: scale(.7);
     position: relative;
     top:16%;
-    left:30%;
-    width:65px;
-    height:40px;
+    
 }
 .tooltip
 {
@@ -699,17 +553,15 @@ nav
     opacity:1;
 }
 .img4
-{   display: block;
+{
     background-image:url(img1.png);
     background-position:-562px -894px;
     width:66px;
     height:42px;
     transform: scale(.7);
     position: relative;
-    top:15%;
-    right:-25%;
-    width:65px;
-    height:40px;
+    bottom:55%;
+    left:72%;
 }
 .tooltip
 {
@@ -743,17 +595,14 @@ nav
 }
 .img5
 {
-    display: block;
     background-image:url(img1.png);
     background-position:-630px -894px;
     width:64px;
     height: 42px;
     transform: scale(.7);
     position: relative;
-    top:15%;
-    left:22%;
-    width:65px;
-    height:40px;
+    bottom:117%;
+    left:155%;
 }
 .tooltip
 {
@@ -786,17 +635,15 @@ nav
     opacity:1;
 }
 .img6
-{   display: block;
+{
     background-image:url(img1.png);
     background-position:-696px -895px;
     width:64px;
     height:42px;
     transform: scale(.7);
     position: relative;
-    left:20%; 
-    top:17%;
-    width:65px;
-    height:40px;
+    left:232%; 
+    bottom:179%;
 }
 .tooltip
 {
@@ -831,9 +678,7 @@ nav
 .advanced
 {
     position:relative;
-    width:14vw;
-    height:7vh;
-    left:41%;
+    left:22%;
     margin:17px;
     color:rgba(0, 0, 0, 0.595);
     font-size: 19px;
@@ -871,9 +716,6 @@ nav
 }
 .toggle
 {
-    display: flex;
-    width:6vw;
-    height:7vh;
     background-image:url(img1.png);
     background-position:-808px -633px;
     width:44px;
@@ -881,8 +723,8 @@ nav
     height:35px;
     transform: scale(.7);
     position: relative;
-    bottom:10%;
-    left:40%;
+    bottom:15%;
+    left:21%;
 }
 .tooltip
 {
