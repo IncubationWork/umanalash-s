@@ -1296,7 +1296,7 @@ input[type=text]
 nav
 {
     display:flex;
-    width:100vw;
+    width:100%;
     height:50px;
     justify-content: center;
     background: #fff;
@@ -1308,7 +1308,7 @@ nav
 .nav1
 {
     display:flex;
-    width:80vw;
+    width:80%;
     height:50px;
     margin:auto;
     background: #fff;
@@ -1328,35 +1328,42 @@ nav
 }
 .photos
 {
+    padding-right: 15px;
+    padding-left:10px;
+    padding-bottom:7px;
     cursor: pointer;
 }
 .photos
 {  
-    margin-right: 15px;
-    border-bottom: 4px solid blue;
+    border-bottom: 4px solid rgb(0,145,220);
 }
 .people
 {
-    margin-right: 15px;
+    padding-right: 15px;
+    padding-bottom:7px;
+    padding-left:10px;
     cursor: pointer;
 }
 .people:hover
 {
-    border-bottom: 4px solid blue;
+    border-bottom: 4px solid rgb(0,145,220);
     
 }
 .groups
 {
+    padding-right: 15px;
+    padding-left:10px;
+    padding-bottom:7px;
     cursor: pointer;
 }
 .groups:hover
 {
-    border-bottom: 4px solid blue;
+    border-bottom: 4px solid rgb(0,145,220);
 }
 .nav2
 {
     display:flex;
-    width:100vw;
+    width:100%;
     height:50px;
     flex-direction: row;
     margin:auto;
@@ -1369,28 +1376,29 @@ nav
 .con1
 {
     display:flex;
-    width:80vw;
+    width:80%;
     cursor: pointer;
-    height:7vh;
+    height:50px;
     flex-direction: row;
     margin-left:auto;
     margin-right: auto;
+    z-index:1;
     justify-content: end;
 }
 .con2
 {
     display:flex;
-    width:60vw;
-    height:7vh;
+    width:60%;
+    height:7px;
     cursor: pointer;
     flex-direction: row;
-    justify-content: left;
+    justify-content:start;
 }
 .con3
 {
     display:flex;
-    width:20vw;
-    height:7vh;
+    width:20%;
+    height:50px;
     padding-top: 25px;
     cursor: pointer;
     gap:8px;
@@ -1400,17 +1408,17 @@ nav
 .colorpalette
 {
     display:flex;
-    width:40vw;
-    height:7vh;
+    width:45%;
+    height:50px;
     padding-top: 20px;
-    justify-content:flex-end;
+    justify-content: end;
     gap:5px;
 }
 .box
 {
-    width:25px;
+    width:22px;
     cursor: pointer;
-    height:25px;
+    height:22px;
     border-radius: 3px;
     gap:5px;
 }
@@ -1653,10 +1661,10 @@ nav
 .pattern
 {
     display:flex;
-    width:20vw;
-    height:7vh;
-    justify-content:flex-end;
+    width:20%;
+    height:50px;
     padding-top: 20px;
+    justify-content: end;
 }
 
 .img4
@@ -2048,8 +2056,11 @@ nav
     font-size: 19px;
     cursor: pointer;
     align-items: end;
-    border:2px solid blue;
     padding-left: 15px;
+}
+.relate:hover
+{
+    text-decoration: underline;
 }
 .searches
 {   
@@ -2120,6 +2131,10 @@ nav
     align-items:center;
     padding-left: 15px;
 }
+.result:hover
+{
+    text-decoration: underline;
+}
 .soccer1
 {
     
@@ -2149,12 +2164,16 @@ nav
 }
 .join1
 {
-    font-size: 18px;
+    font-size:16px;
     width:70%;
     margin-left:-20px;
     height:60%;
     align-self: center;
     justify-content: center;
+}
+.join1:hover
+{
+    text-decoration: underline;
 }
 .result1
 {
@@ -2212,19 +2231,24 @@ nav
 }
 .join2
 {
-    font-size: 18px;
+    font-size: 16px;
     width:70%;
     margin-left:-20px;
     height:60%;
     align-self: center;
     justify-content: center;
 }
+.join2:hover
+{
+    text-decoration: underline;
+}
 .result2
 {
     display: flex;
     width:20%;
     height:40px;
-    font-size: 21px;
+    font-size:20px;
+    font-family: Proxima Nova,helvetica neue,helvetica,arial,sans-serif;
     align-items: center;
     cursor: pointer;
     justify-content: center;
@@ -2249,11 +2273,58 @@ nav
 .sub3
 {
     display:flex;
-    width:20vw;
-    height:15vh;
+    width:100%;
+    height:18%;
     margin-top: 20px;
+    background: white;
 }
-
+.sub-c
+{   
+    width:100%;
+    height:18%;
+    margin-top: 10px;
+    cursor: pointer;
+    padding-top:5px;
+    padding-left: 5px;
+}
+.forum
+{
+    display: flex;
+    width:100%;
+    height:18%;
+    font-size: 15px;
+    column-gap:1%;
+    row-gap:1%;
+    flex-wrap: wrap;
+}
+.forum div
+{
+    padding-bottom:2%;
+    padding-left:2%;
+    padding-right:2%;
+    padding-top: 2%;
+    cursor: pointer;
+    color:rgba(0, 0, 0, 0.693);
+}
+.eng
+{
+    position:relative;
+}
+.arrow
+{
+    background-image: url(spriteimages.png);
+    background-position: -539px -480px; 
+    width: 18px;
+    height:8px;
+    position:absolute;
+    bottom:2.5%;
+    right:75%;
+    transform: scale(.8);
+}
+.forum div:hover
+{
+    text-decoration: underline;
+}
 .line1
 {   display: flex;
     width:100%;
@@ -2266,12 +2337,13 @@ nav
 {   display:flex;
     width:40%;
     height:20px;
-    justify-content: space-evenly;
+    justify-content:start;
 }
 .left1
 {
     display:flex;
-    font-size: 18px;
+    font-size: 16px;
+    padding-top: 5px;
     color:rgba(0, 0, 0, 0.519);
 }
 .image1
@@ -2280,14 +2352,15 @@ nav
     background-position: -525px -106px; 
     cursor: pointer;
     width: 14px;
-    margin-top: 10px;
+    margin-top: 9px;
     height: 8px;
     transform: scale(1.2);
 }
 .left2
 {
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 5px;
+    padding-left: 35px;
     color:rgba(0, 0, 0, 0.519);
 }
 .image2
@@ -2313,18 +2386,19 @@ nav
     background-position: -493px -465px; 
     width: 25px;
     height: 18px;
+    margin-top:5px;
     transform: scale(.9);
     cursor: pointer;
 }
 .right1
 {
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 5px;
     color:rgba(0, 0, 0, 0.519);
 }
 .right2
 {
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 5px;
     color:rgba(0, 0, 0, 0.519);
 }
@@ -2475,13 +2549,6 @@ nav
 {
     text-decoration: underline;
 }
-/*img
-{
-    display:flex;
-    width:100%;
-    height:100%;
-    overflow-y: hidden;
-}*/
 .line3
 {
     display:flex;
@@ -2499,8 +2566,8 @@ nav
     width:100%;
     height:156px;
     position:relative;
+    top:-100%;
     cursor: pointer;
-    margin-top:-110%;
     align-items: center;
     justify-content: center;
 }
@@ -3239,6 +3306,7 @@ h6
     display:flex;
     width:100%;
     height:160px;
+    margin-bottom: 5px;
     column-gap: 6px;
 }
 .conwrap-a
@@ -3462,6 +3530,7 @@ h6
     display:flex;
     width:100%;
     height:160px;
+    margin-bottom: 5px;
     column-gap: 6px;
 }
 .conwrap-a1
@@ -3682,6 +3751,7 @@ h6
     width:100%;
     height:160px;
     column-gap:5px;
+    margin-bottom: 5px;
     overflow-x: hidden;
 }
 .conwrap-b1
@@ -3952,6 +4022,7 @@ h6
     width:100%;
     height:160px;
     overflow-x: hidden;
+    margin-bottom: 5px;
     column-gap:5px;
 }
 .conwrap-c1
@@ -4170,6 +4241,7 @@ h6
     width:100%;
     height:160px;
     overflow-x: hidden;
+    margin-bottom: 5px;
     column-gap:5px;
 }
 .conwrap-d1
@@ -4388,6 +4460,7 @@ h6
     width:100%;
     height:160px;
     overflow-x: hidden;
+    margin-bottom: 5px;
     column-gap:5px;
 }
 .conwrap-e1
@@ -4658,6 +4731,7 @@ h6
     width:100%;
     height:160px;
     overflow-x: hidden;
+    margin-bottom: 5px;
     column-gap:5px;
 }
 .conwrap-f1
@@ -4875,6 +4949,7 @@ h6
     width:100%;
     height:160px;
     overflow-x: hidden;
+    margin-bottom: 5px;
     column-gap:5px;
 }
 .conwrap-g1
