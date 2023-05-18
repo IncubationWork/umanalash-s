@@ -914,21 +914,22 @@ body
 {
     height:100vh;
     width:100vw;
-    
+    font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
+    overflow: hidden;
 }
 header
 {
     display:grid;
     width:100%;
-    height:6vh;
+    height:60px;
     margin:auto;
     background: black;
     grid-template-columns:1fr 1fr 0.5r 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
     transform: scaleX(1);
     transform: scaleY(1);
     position:fixed;
-    top:0%;
-    z-index: 2;
+    top:0;
+    z-index: 1;
      
 }
 .img{
@@ -982,8 +983,6 @@ header
     transform: scale(.6);
     position: relative;
     left:12%;
-     
-     
 }
 .you
 {
@@ -1067,7 +1066,7 @@ header
     font-family: sans-serif;
     line-height: 1.2;
     position: absolute;
-    top:50px;
+    top:51px;
 }
 .menu:hover .submenu1 ul
 {
@@ -1078,6 +1077,8 @@ header
     list-style-type: none;
     background:#ffff;
     border-radius: 5px;
+    position:relative;
+    z-index: 4;
     color:black;
     border:1px solid rgba(128,128,128,0.37);
     box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.15);
@@ -1107,9 +1108,6 @@ header
     background:#fff;
     transform: rotate(45deg);
 }
-
-
-
 .explore
 {
     grid-column: 4/5;
@@ -1299,18 +1297,23 @@ nav
 {
     display:flex;
     width:100vw;
-    height:7vh;
+    height:50px;
+    justify-content: center;
+    background: #fff;
     flex-direction: row;
-   
+    position: fixed;
+    top:60px;
+    z-index:1;
 }
 .nav1
 {
-    display: inline-flex;
+    display:flex;
     width:80vw;
-    height:7vh;
-    margin-left:10%;
-    margin-right: 10%;
+    height:50px;
+    margin:auto;
     background: #fff;
+    align-items: end;
+    position:absolute;
     flex-direction: row;
     border-bottom:0.9px solid rgba(0, 0, 0, 0.278);
     font-size:20px;
@@ -1326,16 +1329,16 @@ nav
 .photos
 {
     cursor: pointer;
-    padding:20px;
 }
 .photos
-{
+{  
+    margin-right: 15px;
     border-bottom: 4px solid blue;
 }
 .people
 {
+    margin-right: 15px;
     cursor: pointer;
-    padding:20px;
 }
 .people:hover
 {
@@ -1345,7 +1348,6 @@ nav
 .groups
 {
     cursor: pointer;
-    padding:20px;
 }
 .groups:hover
 {
@@ -1355,11 +1357,14 @@ nav
 {
     display:flex;
     width:100vw;
-    height:7vh;
+    height:50px;
     flex-direction: row;
     margin:auto;
+    position:fixed;
+    top:110px;
+    z-index:1;
+    background: #fff;
     border-bottom:0.9px solid rgba(0, 0, 0, 0.278);
-    position:sticky;
 }
 .con1
 {
@@ -1613,9 +1618,8 @@ nav
     background:rgb(250, 248, 248);
     transform: rotate(45deg);
 }
-/*.tooltip bts purpleworld forever,
-bts universe,
-bts babygirll, btsmemes unlimited
+/*.tooltip
+
 {
     position:absolute;
     left:50%;
@@ -2006,59 +2010,57 @@ bts babygirll, btsmemes unlimited
 .content
 {   
     display: flex;
-    width:100vw;
-    height:300vh;
+    width:100%;
+    height:250%;
     justify-content: center;
-    padding-top: 20px;
     gap:10px;
+    position: relative;
+    top:160px;
     background: rgba(233, 230, 230, 0.959);
 }
 .main
 {
-    width:60vw;
-    height:270vh;
+    width:60%;
+    height:100%;
     cursor: pointer;
-    border:2px solid blue;
 }
 .sub
 {   
-    width:20vw;
-    height:105vh;
-    padding-top: 40px;
+    width:20%;
+    height:35%;
+    padding-top: 3%;
     cursor:pointer;
-    border:2px solid green;
     position: sticky;
-    top:-20%;
+    top:-10%;
 }
 .sub1 
 {
-    width:20vw;
-    height:30vh;
+    width:100%;
+    height:30%;
+    margin-bottom: 15px;
     background-color: rgba(255, 255, 255, 0.953);
-    margin-bottom: 10px;
 }
 .relate
 {
     display:flex;
-    width:15vw;
-    height:4vh;
+    width:100%;
+    height:20%;
     font-size: 21px;
     cursor: pointer;
-    margin-top:20px;
-    text-align: left;
-    border:2px solid white;
+    align-items: end;
+    border:2px solid blue;
+    padding-left: 15px;
 }
 .searches
 {   
-    width:20vw;
-    height:22vh;
+    width:100%;
+    height:70%;
     margin-top: 10px;
     cursor: pointer;
     padding-top: 30px;
     padding-left: 20px;
-    
 }
-.mac
+/*.mac
 {
     font-size: 22px;
     cursor: pointer;
@@ -2072,25 +2074,42 @@ bts babygirll, btsmemes unlimited
     background: gray;
     transition:0.4s;
     
+}*/
+.mac1
+{
+    display: flex;
+    width:100%;
+    height:70%;
+    padding:5px;
+    column-gap: 3%;
+    row-gap:9%;
+    flex-wrap: wrap;
 }
-.mac1 
+.mac1 div
+{
+    padding-bottom:1%;
+    padding-left:3%;
+    padding-right:3%;
+    padding-top: 2.5%;
+    cursor: pointer;
+    border-radius:5px;
+    color:rgba(0, 0, 0, 0.693);
+    background:rgba(179, 178, 178, 0.515);
+}
+.mac1 div:hover
+{
+    color:white;
+    background: gray;
+    transition:0.4s;
+}
+
+/*.mac2 
 {
     display:flex;
-    width:3vw;
-    height:3vh;
-    margin-bottom:20px;
+    width:100%;
+    height:20%;
     cursor: pointer;
-    margin-right: 10px;
-    gap:10px;
-
-}
-
-.mac2 
-{
-    display:flex;
-    width:3vw;
-    cursor: pointer;
-    height:3vh;
+    border-radius: 10px;
     gap:10px;
     margin-bottom:20px;
 
@@ -2098,38 +2117,37 @@ bts babygirll, btsmemes unlimited
 .mac3
 {
     display:flex;
-    width:3vw;
-    height:3vh;
+    width:100%;
+    height:20%;
     cursor: pointer;
+    border-radius: 10px;
     gap:10px;
     margin-bottom:20px;
     margin-right: 10px;
-}
+}*/
 .sub2 
 {
-    width:20vw;
-    height:40vh;
+    width:100%;
+    height:40%;
     background-color: rgba(255, 255, 255, 0.953);
-    margin-top: 20px;
+
 }
 .result
 {
-    width:15vw;
+    width:100;
     cursor: pointer;
-    height:4vh;
+    height:18%;
+    border:2px solid red;
     font-size: 21px;
-    margin-top:20px;
-    text-align: left;
+    align-self:end;
 }
 .soccer1
 {
     
     display:flex;
-    width:18vw;
+    width:90%;
     cursor: pointer;
-    height:4vh;
-    margin-top:20px;
-    margin-left: 10px;
+    height:15%;
     justify-content: space-between;
 
 }
@@ -2137,26 +2155,30 @@ bts babygirll, btsmemes unlimited
 {
     display:flex;
     cursor: pointer;
-    width:10vw;
-    height:4vh;
-    justify-content: space-around;
+    width:70%;
+    height:100%;
+    border: 2px solid blue;
     font-size: 21px;
     text-align: left;
 }
 .beach10
 {
     border-radius: 20px;
+    align-items:start;
 }
-.join
+.join1
 {
+    border: 2px solid green;
     font-size: 18px;
-    align-self: end;
+    width:70%;
+    height:60%;
+    justify-content: center;
 }
 .result1
 {
     display: flex;
-    width:4vw;
-    height:4vh;
+    width:20%;
+    height:80%;
     font-size: 21px;
     align-items: center;
     cursor: pointer;
@@ -2172,22 +2194,21 @@ bts babygirll, btsmemes unlimited
 .sub-a
 {
     display:flex;
-    width:18vw;
-    height:6vh;
+    width:90%;
+    height:25%;
+    align-items:center;
+    justify-content: center;
     cursor: pointer;
     gap:5px;
-    margin-top:20px;
-    margin-left: 10px;
+   
 }
-.soccer1
+.soccer3
 {
     
     display:flex;
-    width:18vw;
+    width:90%;
     cursor: pointer;
-    height:4vh;
-    margin-top:20px;
-    margin-left: 10px;
+    height:15%;
     justify-content: space-between;
 
 }
@@ -2195,9 +2216,9 @@ bts babygirll, btsmemes unlimited
 {
     cursor: pointer;
     display:flex;
-    width:10vw;
-    height:4vh;
-    justify-content: space-around;
+    width:50%;
+    height:100%;
+    justify-content: space-between;
     font-size: 21px;
     text-align: left;
 }
@@ -2209,13 +2230,13 @@ bts babygirll, btsmemes unlimited
 {
     font-size: 18px;
     cursor: pointer;
-    align-self: end;
+    align-self:center;
 }
 .result2
 {
     display: flex;
-    width:4vw;
-    height:4vh;
+    width:20%;
+    height:80%;
     font-size: 21px;
     align-items: center;
     cursor: pointer;
@@ -2231,15 +2252,13 @@ bts babygirll, btsmemes unlimited
 .sub-b
 {
     display:flex;
-    width:18vw;
-    height:6vh;
+    width:90%;
+    height:25%;
     gap:5px;
     cursor: pointer;
-    margin-top:20px;
-    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
 }
-
-
 .sub3
 {
     display:flex;
@@ -2250,22 +2269,22 @@ bts babygirll, btsmemes unlimited
 
 .line1
 {   display: flex;
-    width:60vw;
-    height:8vh;
+    width:100%;
+    height:30px;
+    padding-top: 2%;
     justify-content: space-between;
     flex-direction: row;
 }
 .left
 {   display:flex;
-    width:20vw;
-    height:4vh;
+    width:40%;
+    height:20px;
     justify-content: space-evenly;
 }
 .left1
 {
     display:flex;
     font-size: 18px;
-    padding-top: 5px;
     font-family: sans-serif;
     color:rgba(0, 0, 0, 0.519);
 }
@@ -2279,8 +2298,6 @@ bts babygirll, btsmemes unlimited
     height: 8px;
     transform: scale(1.2);
 }
-
-
 .left2
 {
     font-size: 18px;
@@ -2301,8 +2318,8 @@ bts babygirll, btsmemes unlimited
 .right
 
 {   display:flex;
-    width:25vw;
-    height:4vh;
+    width:40%;
+    height:20px;
     justify-content: space-evenly;
 }
 .image3
@@ -2313,7 +2330,6 @@ bts babygirll, btsmemes unlimited
     height: 18px;
     transform: scale(.9);
     cursor: pointer;
-    align-self:center;
 }
 .right1
 {
@@ -2343,8 +2359,8 @@ bts babygirll, btsmemes unlimited
 .tooltext
 {
     display:flex;
-    width:8vw;
-    height:3vh;
+    width:35%;
+    height:30px;
     justify-content: space-evenly;
 }
 .image5
@@ -2435,24 +2451,21 @@ bts babygirll, btsmemes unlimited
   }
 .line2
 {   display: flex;
-    width:59vw;
-    height:8vh;
-    align-content: center;
+    width:100%;
+    height:60px;
+    align-items: end;
     justify-content: space-between;
     flex-direction: row;
 }
 .lr1
 {
     display: flex;
-    width:20vw;
-    height:4vh;
-    align-self: center;
+    width:30%;
     justify-content:start;
 }
 .left3
 {
-    font-size: 22px;
-    font-family: sans-serif;
+    font-size: 20px;
     cursor: pointer;
     color:black;
 }
@@ -2461,16 +2474,13 @@ bts babygirll, btsmemes unlimited
 
     display: flex;
     cursor: pointer;
-    width:35vw;
-    height:5vh;
-    align-self: center;
+    width:50%;
     justify-content:end;
 }
 .right3
 {    
     font-size: 18px;
     cursor: pointer;
-    font-family: sans-serif;
     color:rgb(103, 149, 248);
 }
 .right3 a
@@ -2482,31 +2492,34 @@ bts babygirll, btsmemes unlimited
 {
     text-decoration: underline;
 }
+/*img
+{
+    display:flex;
+    width:100%;
+    height:100%;
+    overflow-y: hidden;
+}*/
 .line3
 {
     display:flex;
-    width:60vw;
-    height:18vh;
-    margin-top: 10px;
-    column-gap: 7px;
-}
-.con-wrap
-{
-    width:150px;
-    height: 156px;
+    width:100%;
+    height:160px;
+    column-gap: 5px;
 }
 .con-wrap img
 {
-    width:150px;
-    height: 156px;
+    width:100%;
+    height:156px;
 }
 .text-wrap
 {
-    width:150px;
+    width:100%;
     height:156px;
-    position:relative;  
+    position:relative;
     cursor: pointer;
-    margin-top: -107%;
+    margin-top:-110%;
+    align-items: center;
+    justify-content: center;
 }
 .text-wrap p
 {
@@ -2522,12 +2535,12 @@ bts babygirll, btsmemes unlimited
 .line4
 {
     display: flex;
-    width:60vw;
-    height:5vh;
+    width:100%;
+    height:50px;
+    align-items:start;
     justify-content: center;
     cursor: pointer;
     font-size: 22px;
-    margin-bottom: 2px;
     color:rgb(103, 149, 248);
 }
 .line4 a
@@ -2542,15 +2555,15 @@ bts babygirll, btsmemes unlimited
 .line5
 {
     display: flex;
-    width:59vw;
-    height:3vh;
-    margin-top: 15px;
+    width:100%;
+    height:30px;
+    align-items: end;
     justify-content: space-between;
 }
 .from
 {
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px;
     color:#000;
 }
 .strong
@@ -2579,11 +2592,9 @@ bts babygirll, btsmemes unlimited
 .line6
 {
     display:flex;
-    width:60vw;
-    height:18vh;
-    margin-top: 10px;
-    column-gap: 7px;
-    margin-bottom: 10px;
+    width:100%;
+    height:160px;
+    column-gap: 5px;
 }
 /*.conwrap1
 {
@@ -2625,37 +2636,35 @@ bts babygirll, btsmemes unlimited
 }*/
 .conwrap1
 {   
-    width:300px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap1 
 {
-    height:156px;
+    width:100%;
+    height:100%;
     background: rgba(0, 0, 0, 0.115);
+    margin-left:-25%;
     color:#fff;
     opacity: 0;
-    margin-left: -307px;
     display: flex;
-    align-self:end;
+    align-self:center;
     justify-content: end;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap1 
-{
-    width:300px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
     cursor: pointer;
-    display:flex;
-    justify-self: end;
-    align-items: end;
-    flex-direction:row;
 }
 .title1
 {
     font-size: 16px;
+    justify-content:start;
+    align-items:end;
+}
+.subtitle1
+{
+    font-size: 16px;
+    justify-content:start;
+    align-items:end;
 }
 .star
 {
@@ -2684,29 +2693,21 @@ bts babygirll, btsmemes unlimited
 }
 .conwrap2
 {   
-    width:180px;
-    height:156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap2
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
     display: flex;
     cursor: pointer;
-    align-self:end;
-    justify-content: end;
-    margin-left: -188px;
+    margin-left:-25%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap2
-{
-    width:180px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title1
 {
@@ -2740,31 +2741,22 @@ bts babygirll, btsmemes unlimited
 
 .conwrap3
 {   
-    width:300px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap3
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -308px;
+    margin-left:-25%;
     cursor: pointer;
     display:flex;
-    justify-content: end;
-    align-self:end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap3
-{
-    width:300px;
-    height:156px;
     position:relative;
-    bottom:9%;  
     display:flex;
-    justify-content: end;
 }
 .title2
 {
@@ -2798,29 +2790,21 @@ bts babygirll, btsmemes unlimited
 
 .conwrap4
 {   
-    width:300px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap4
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -308px;
+    margin-left:-25%;
     cursor: pointer;
-    align-self:end;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap4
-{
-    width:300px;
-    height:156px;
     position:relative;
-    bottom:9%;  
 }
 .title3
 {
@@ -2851,22 +2835,24 @@ bts babygirll, btsmemes unlimited
 {
     opacity: 1;
 }
+
 .line7
 {
     display: flex;
-    width:59vw;
-    height:3vh;
-    margin-bottom: 10px;
-    justify-content: space-between;
+    width:100%;
+    height:50px;
+    align-items: end;
+    justify-content: space-between; 
+    column-gap: 7px;
 }
 .from1
 {
-    font-size: 24px;
+    font-size: 22px;
     color:#000;
 }
 .view1
 {
-    font-size: 22px;
+    font-size: 20px;
     color:rgb(103, 149, 248);
 }
 .view1 a 
@@ -2882,35 +2868,28 @@ bts babygirll, btsmemes unlimited
 .line8
 {
     display:flex;
-    width:60vw;
-    height:18vh;
-    column-gap: 7px;
-    margin-bottom: 10px;
+    width:100%;
+    height:160px;
+    column-gap: 10px;
+    overflow-x: hidden;
 }
 .conwrap5
 {   
-    width:260px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap5
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     color:#fff;
     background: rgba(0, 0, 0, 0.115);
     opacity: 0;
-    margin-left: -266px;
-    align-self:end;
+    margin-left:-24.3%;
     display:flex;
-    justify-content: end;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap5
-{
-    width:260px;
-    height:156px;
     position:relative;
-    bottom:9%;  
 }
 .title4
 {
@@ -2950,28 +2929,20 @@ bts babygirll, btsmemes unlimited
 }
 .conwrap6
 {   
-    width:300px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap6
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -308px;
-    align-self:end;
+    margin-left: -24.3%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap6
-{
-    width:300px;
-    height:156px;
     position:relative;
-    bottom:9%;  
 }
 .title5
 {
@@ -3011,28 +2982,20 @@ bts babygirll, btsmemes unlimited
 }
 .conwrap7
 {   
-    width:270px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap7
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -247px;
-    align-self:end;
+    margin-left:-24.3%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap7
-{
-    width:270px;
-    height:156px;
     position:relative;
-    bottom:9%;  
 }
 .title6
 {
@@ -3072,28 +3035,20 @@ bts babygirll, btsmemes unlimited
 }
 .conwrap8
 {   
-    width:250px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap8
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -208px;
-    align-self:end;
+    margin-left:-24.3%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap8
-{
-    width:250px;
-    height:156px;
     position:relative;
-    bottom:9%;  
 }
 .title7
 {
@@ -3131,249 +3086,78 @@ bts babygirll, btsmemes unlimited
 {
     opacity: 1;
 }
-/*.con-wrap1{   
-    width:250px;
-    height: 156px;
-}
-
-.text-wrap1
-{
-    height:156px;
-    background: rgba(0, 0, 0, 0.432);
-    color:#fff;
-    opacity: 0;
-    margin-left: -258px;
-    align-self:end;
-    display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.text-wrap1
-{
-    width:250px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
-}
-.title-1
-{
-    font-size: 16px;
-    padding-top:20px;
-}
-.subtitle-1
-{
-    font-size:9px;
-    padding-top:20px;
-}
-.leftline1
-{
-    justify-content: flex-end;
-    align-self:flex-start;
-}
-.rightline1
-{
-    justify-content: flex-end;
-    align-self:flex-end;
-}
-.con-wrap2
-{   
-    width:250px;
-    height: 156px;
-}
-
-.text-wrap2
-{
-    height:156px;
-    background: rgba(0, 0, 0, 0.432);
-    color:#fff;
-    opacity: 0;
-    margin-left: -258px;
-    align-self:end;
-    display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.text-wrap2
-{
-    width:250px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
-}
-.title-2
-{
-    font-size: 16px;
-}
-.subtitle-2
-{
-    font-size:9px;
-}
-.leftline2
-{
-    justify-content: flex-end;
-    align-self:flex-start;
-}
-.rightline2
-{
-    justify-content: flex-end;
-    align-self:flex-end;
-}
-.con-wrap3
-{   
-    width:250px;
-    height: 156px;
-}
-
-.text-wrap3
-{
-    height:156px;
-    background: rgba(0, 0, 0, 0.432);
-    color:#fff;
-    opacity: 0;
-    margin-left: -258px;
-    align-self:end;
-    display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.text-wrap3
-{
-    width:250px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
-}
-.title-3
-{
-    font-size: 16px;
-}
-.subtitle-3
-{
-    font-size:9px;
-}
-.leftline3
-{
-    justify-content: flex-end;
-    align-self:flex-start;
-}
-.rightline3
-{
-    justify-content: flex-end;
-    align-self:flex-end;
-}
-.con-wrap4
-{   
-    width:250px;
-    height: 156px;
-}
-
-.text-wrap4
-{
-    height:156px;
-    background: rgba(0, 0, 0, 0.432);
-    color:#fff;
-    opacity: 0;
-    margin-left: -258px;
-    align-self:end;
-    display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.text-wrap4
-{
-    width:250px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
-}
-.title-4
-{
-    font-size: 16px;
-}
-.subtitle-4
-{
-    font-size:9px;
-}
-.leftline4
-{
-    justify-content: flex-end;
-    align-self:flex-start;
-}
-.rightline4
-{
-    justify-content: flex-end;
-    align-self:flex-end;
-}*/
 .con-wrap1
 {
-    width:260px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 .con-wrap1 img
 {
-    width:260px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 .text-wrap1
 {
-    width:260px;
-    height:156px;
+    width:100%;
+    height: 100%;
     position:relative;  
-    margin-left:-24%;
+    margin-left:-27.7%;
 }
 .text-wrap1 .flickr
 {
-    height:156px;
+    height:100%;
     text-align: center;
     padding-top:65px;
-    color:#fff;
+    color:#fff; margin-left:11%;
+    margin-right: -11%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .con-wrap2
 {
-    width:300px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 .con-wrap2 img
 {
-    width:300px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 .text-wrap2
 {
-    width:300px;
-    height:156px;
+    width:100%;
+    height: 100%;
     position:relative;  
     margin-left:-27.7%;
 }
 .text-wrap2 .flickr1
 {
-    height:156px;
+    height:100%;
     text-align: center;
     padding-top:65px;
-    color:#fff;
+    color:#fff; margin-left:11%;
+    margin-right: -11%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .con-wrap3
 {
-    width:270px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 .con-wrap3 img
 {
-    width:270px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 .text-wrap3
 {
-    width:270px;
-    height:156px;
+    width:100%;
+    height: 100%;
     position:relative;  
     margin-left:-27.7%;
 }
 .text-wrap3 .flickr2
 {
-    height:156px;
+    height:100%;
     text-align: center;
     padding-top:65px;
     color:#fff;
@@ -3383,24 +3167,24 @@ bts babygirll, btsmemes unlimited
 }
 .con-wrap4
 {
-    width:250px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 .con-wrap4 img
 {
-    width:250px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 .text-wrap4
 {
-    width:250px;
-    height:156px;
+    width:100%;
+    height: 100%;
     position:relative;  
     margin-left:-27.7%;
 }
 .text-wrap4 .flickr3
 {
-    height:156px;
+    height:100%;
     text-align:center;
     padding-top:65px;
     color:#fff;
@@ -3411,11 +3195,11 @@ bts babygirll, btsmemes unlimited
 
 h5
 {
-    font-size: 20px;
+    font-size: 15px;
 }
 h6
 {
-    font-size: 14px;
+    font-size: 10px;
 }
 .leftline1
 {
@@ -3428,19 +3212,19 @@ h6
 .line9
 {
     display: flex;
-    width:59vw;
-    height:3vh;
-    margin-bottom: 10px;
-    justify-content: space-between;
+    width:100%;
+    height:50px;
+    justify-content:space-between;
+    align-items: end;
 }
 .every
-{
+{    
     font-size: 20px;
     color:#000;
 }
 .one 
 {
-    font-size: 18px;
+    font-size: 20px;
     color:rgb(103, 149, 248);
 }
 .one a
@@ -3453,38 +3237,37 @@ h6
     text-decoration: underline;
     
 }
+img
+{
+    display: flex;
+    width:100%;
+    height:100%;
+    overflow-y: hidden;
+}
 .line10
 {
     display:flex;
-    width:60vw;
-    height:17vh;
+    width:100%;
+    height:160px;
     column-gap: 6px;
 }
 .conwrap-a
 {   
-    width:260px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-a
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -268px;
+    margin-left:-25%;
     margin-bottom:-10px;
-    align-self:end;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-a
-{
-    width:260px;
-    height:156px;
     position:relative;
-    bottom:9%;  
 }
 .title-a
 {
@@ -3524,29 +3307,21 @@ h6
 }
 .conwrap-b
 {   
-    width:300px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-b
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -308px;
+    margin-left: -25%;
     margin-bottom:-10px;
-    align-self:end;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-b
-{
-    width:300px;
-    height:156px;
     position:relative;
-    bottom:9%;  
 }
 .title-b
 {
@@ -3586,29 +3361,21 @@ h6
 }
 .conwrap-c
 {   
-    width:258px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-c
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -264px;
-    align-self:end;
+    margin-left:-25%;
     margin-bottom:-10px;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-c
-{
-    width:258px;
-    height:156px;
     position:relative;
-    bottom:9%;  
 }
 .title-c
 {
@@ -3648,29 +3415,21 @@ h6
 }
 .conwrap-d
 {   
-    width:270px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-d
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -278px;
-    align-self:end;
+    margin-left:-25%;
     margin-bottom:-10px;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-d
-{
-    width:270px;
-    height:156px;
     position:relative;
-    bottom:9%;  
 }
 .title-d
 {
@@ -3711,35 +3470,26 @@ h6
 .line11
 {
     display:flex;
-    width:60vw;
-    height:17vh;
+    width:100%;
+    height:160px;
     column-gap: 6px;
 }
 .conwrap-a1
 {   
-    width:256px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-a1
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -262px;
+    margin-left:-25%;
     margin-bottom:-10px;
-    align-self:end;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-a1
-{
-    width:256px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-a1
 {
@@ -3780,29 +3530,19 @@ h6
 
 .conwrap-a2
 {   
-    width:290px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-a2
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -297px;
-    align-self:end;
-    margin-bottom:-10px;
+    margin-left:-25%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-a2
-{
-    width:290px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-a2
 {
@@ -3843,29 +3583,19 @@ h6
 
 .conwrap-a3
 {   
-    width:270px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-a3
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -278px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-25%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-a3
-{
-    width:270px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-a3
 {
@@ -3906,29 +3636,19 @@ h6
 
 .conwrap-a4
 {   
-    width:270px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-a4
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -278px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-25%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-a4
-{
-    width:270px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-a4
 {
@@ -3969,35 +3689,26 @@ h6
 .line12
 {
     display:flex;
-    width:60vw;
-    height:17vh;
-    column-gap: 6px;
+    width:100%;
+    height:160px;
+    column-gap:5px;
+    overflow-x: hidden;
 }
 .conwrap-b1
 {   
-    width:240px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-b1
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -247px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-20%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-b1
-{
-    width:240px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-b1
 {
@@ -4037,29 +3748,19 @@ h6
 }
 .conwrap-b2
 {   
-    width:220px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-b2
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -227px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-20%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-b2
-{
-    width:220px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-b2
 {
@@ -4100,29 +3801,19 @@ h6
 
 .conwrap-b3
 {   
-    width:240px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-b3
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -247px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-20%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-b3
-{
-    width:240px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-b3
 {
@@ -4163,29 +3854,19 @@ h6
 
 .conwrap-b4
 {   
-    width:150px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-b4
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -157px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-20%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-b4
-{
-    width:150px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-b4
 {
@@ -4225,29 +3906,19 @@ h6
 }
 .conwrap-b5
 {   
-    width:230px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-b5
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -237px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-20%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-b5
-{
-    width:230px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-b5
 {
@@ -4288,35 +3959,26 @@ h6
 .line13
 {
     display:flex;
-    width:60vw;
-    height:17vh;
-    column-gap: 6px;
+    width:100%;
+    height:160px;
+    overflow-x: hidden;
+    column-gap:5px;
 }
 .conwrap-c1
 {   
-    width:260px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-c1
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -267px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-25%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-c1
-{
-    width:260px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-c1
 {
@@ -4356,29 +4018,19 @@ h6
 }
 .conwrap-c2
 {   
-    width:280px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-c2
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -285px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-25%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-c2
-{
-    width:280px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-c2
 {
@@ -4419,29 +4071,19 @@ h6
 
 .conwrap-c3
 {   
-    width:270px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-c3
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -276px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-25%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-c3
-{
-    width:270px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-c3
 {
@@ -4482,29 +4124,19 @@ h6
 
 .conwrap-c4
 {   
-    width:270px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-c4
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -277px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-25%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-c4
-{
-    width:270px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-c4
 {
@@ -4545,35 +4177,26 @@ h6
 .line14
 {
     display:flex;
-    width:60vw;
-    height:17vh;
-    column-gap: 6px;
+    width:100%;
+    height:160px;
+    overflow-x: hidden;
+    column-gap:5px;
 }
 .conwrap-d1
 {   
-    width:270px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-d1
 {
-    height:156px;
+    height:100%;
+    width:100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -277px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-25%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-d1
-{
-    width:270px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-d1
 {
@@ -4613,29 +4236,19 @@ h6
 }
 .conwrap-d2
 {   
-    width:273px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-d2
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -279px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-25%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-d2
-{
-    width:273px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-d2
 {
@@ -4676,29 +4289,19 @@ h6
 
 .conwrap-d3
 {   
-    width:270px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-d3
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -277px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-25%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-d3
-{
-    width:270px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-d3
 {
@@ -4739,29 +4342,19 @@ h6
 
 .conwrap-d4
 {   
-    width:270px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-d4
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -277px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-25%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-d4
-{
-    width:270px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-d4
 {
@@ -4802,35 +4395,26 @@ h6
 .line15
 {
     display:flex;
-    width:60vw;
-    height:17vh;
-    column-gap: 6px;
+    width:100%;
+    height:160px;
+    overflow-x: hidden;
+    column-gap:5px;
 }
 .conwrap-e1
 {   
-    width:240px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-e1
 {
-    height:156px;
+    height:100%;
+    width:100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -247px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-20%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-e1
-{
-    width:240px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-e1
 {
@@ -4870,29 +4454,19 @@ h6
 }
 .conwrap-e2
 {   
-    width:220px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-e2
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -227px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-20%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-e2
-{
-    width:220px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-e2
 {
@@ -4933,29 +4507,19 @@ h6
 
 .conwrap-e3
 {   
-    width:240px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-e3
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -247px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-20%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-e3
-{
-    width:240px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-e3
 {
@@ -4996,29 +4560,19 @@ h6
 
 .conwrap-e4
 {   
-    width:150px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-e4
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -157px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-20%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-e4
-{
-    width:150px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-e4
 {
@@ -5058,29 +4612,19 @@ h6
 }
 .conwrap-e5
 {   
-    width:230px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-e5
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -237px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-20%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-e5
-{
-    width:230px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-e5
 {
@@ -5121,35 +4665,26 @@ h6
 .line16
 {
     display:flex;
-    width:60vw;
-    height:17vh;
-    column-gap: 6px;
+    width:100%;
+    height:160px;
+    overflow-x: hidden;
+    column-gap:5px;
 }
 .conwrap-f1
 {   
-    width:270px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-f1
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -277px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-25%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-f1
-{
-    width:270px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-f1
 {
@@ -5188,30 +4723,19 @@ h6
     opacity: 1;
 }
 .conwrap-f2
-{   
-    width:273px;
-    height: 156px;
+{  width:100%;
+    height: 100%;
 }
 
 .textwrap-f2
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -279px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-25%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-f2
-{
-    width:273px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-f2
 {
@@ -5252,29 +4776,19 @@ h6
 
 .conwrap-f3
 {   
-    width:270px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-f3
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -277px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-25%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-f3
-{
-    width:270px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-f3
 {
@@ -5315,29 +4829,19 @@ h6
 
 .conwrap-f4
 {   
-    width:270px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-f4
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -277px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-25%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-f4
-{
-    width:270px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-f4
 {
@@ -5378,35 +4882,26 @@ h6
 .line17
 {
     display:flex;
-    width:60vw;
-    height:17vh;
-    column-gap: 6px;
+    width:100%;
+    height:160px;
+    overflow-x: hidden;
+    column-gap:5px;
 }
 .conwrap-g1
 {   
-    width:240px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-g1
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -247px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-20%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-g1
-{
-    width:240px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-g1
 {
@@ -5446,29 +4941,19 @@ h6
 }
 .conwrap-g2
 {   
-    width:220px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-g2
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -227px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-20%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-g2
-{
-    width:220px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-g2
 {
@@ -5509,29 +4994,19 @@ h6
 
 .conwrap-g3
 {   
-    width:240px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-g3
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -247px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-20%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-g3
-{
-    width:240px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-g3
 {
@@ -5572,29 +5047,19 @@ h6
 
 .conwrap-g4
 {   
-    width:150px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-g4
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -157px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-20%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-g4
-{
-    width:150px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-g4
 {
@@ -5634,29 +5099,19 @@ h6
 }
 .conwrap-g5
 {   
-    width:230px;
-    height: 156px;
+    width:100%;
+    height: 100%;
 }
 
 .textwrap-g5
 {
-    height:156px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.115);
     color:#fff;
     opacity: 0;
-    margin-left: -237px;
-    margin-bottom:-10px;
-    align-self:end;
+    margin-left:-20%;
     display:flex;
-    justify-content: end;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.textwrap-g5
-{
-    width:230px;
-    height:156px;
-    position:relative;
-    bottom:9%;  
 }
 .title-g5
 {
@@ -5697,31 +5152,31 @@ h6
 .more
 {
     display:flex;
-    width:60vw;
-    height:17vh;
+    width:100%;
+    height:160px;
     justify-content: center;
 }
 .viewmore
 {
     display:flex;
-    width:10vw;
-    height:6vh;
-    text-align:center;
+    width:15%;
+    height:60px;
+    align-items: center;
+    justify-content: center;
     font-size:24px;
     color:#000;
     align-self: end;
-    padding-left: 37px;
-    padding-top: 10px;
     background: lightgray;
     border:2px solid gray;
 }
 .viewmore a
 {
     text-decoration: none;
+    color:#000;
 }
-.viewmore a:hover 
+.viewmore:hover 
 {
-    color:white;
+    color:#000;
     background: gray;
 }
 
