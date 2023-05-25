@@ -116,7 +116,7 @@ header
     height: 43px;
     transform: scale(.3);
     position: relative;
-    top:4%;
+    top:7%;
 }
 .pic2
 {
@@ -129,7 +129,7 @@ header
     transform: scale(.3);
     position: relative;
     left:-11%;
-    top:5%;
+    top:7%;
     
 }
 .logo
@@ -142,7 +142,7 @@ header
     height: 50px;
     transform: scale(.4);
     position: relative;
-    left: -30%;
+    left: -35%;
 }
 .you
 {
@@ -1037,8 +1037,8 @@ nav
 .beach110
 {
     height:40px;
-    width:60%;
-    border-radius: 30px;
+    width:52%;
+    border-radius:50%;
     align-items:start;
 }
 .join1
@@ -1105,7 +1105,7 @@ nav
 {
     height:40px;
     width:60%;
-    border-radius: 30px;
+    border-radius:50%;
     align-items:start;
 }
 .join2
@@ -1865,6 +1865,7 @@ h6
         display: block;
         grid-column:1;
         grid-row: 1;
+        z-index:33;
     }
 
     .menubar img{
@@ -1878,14 +1879,14 @@ h6
         grid-column: 2;
         grid-template-columns:235px 20px 30px;
     }
+
     .head4
     {
          display:flex;
          grid-column:1;
          grid-row: 1;
          position:relative;
-         left:-49px;
-
+         right:46px;
     }
     .content
     {
@@ -1953,7 +1954,7 @@ h6
    }
     .search:focus
     {
-        width:630px;
+        width:435px;
         border:none;
         z-index:15;
         color:white;
@@ -1976,7 +1977,7 @@ h6
         height: 26px;
         justify-content:start;
         position:relative;
-        left:-10px;
+        left:-4px;
         z-index:10;
     }
     .pic5
@@ -1986,7 +1987,7 @@ h6
         height:48px;
         width:48px;
         position: relative;
-        left:12px;
+        left:20px;
         z-index: 11;
     }
     .nav1 
@@ -2003,12 +2004,19 @@ h6
     {
         width:100%;
         height:60px;
+        align-items: end;
     }
     .image3
     {
         visibility: visible;
     }
-
+    .right
+    {
+        display: flex;
+        justify-content: start;
+        position: relative;
+        right:50px;
+    }
     .line6,.line10, .line11, .line12, .line13, .line14, .line15,.line16 
     { 
         width:100%;
