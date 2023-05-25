@@ -1876,9 +1876,17 @@ h6
     {
         display: grid;
         grid-column: 2;
-        grid-template-columns:235px 20px 250px 150px;
+        grid-template-columns:235px 20px 30px;
     }
-  
+    .head4
+    {
+         display:flex;
+         grid-column:1;
+         grid-row: 1;
+         position:relative;
+         left:-49px;
+
+    }
     .content
     {
         grid-row: 3;
@@ -1968,7 +1976,7 @@ h6
         height: 26px;
         justify-content:start;
         position:relative;
-        left:22%;
+        left:-10px;
         z-index:10;
     }
     .pic5
@@ -1978,7 +1986,7 @@ h6
         height:48px;
         width:48px;
         position: relative;
-        left:50%;
+        left:12px;
         z-index: 11;
     }
     .nav1 
