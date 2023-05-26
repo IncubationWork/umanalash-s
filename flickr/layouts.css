@@ -73,7 +73,7 @@ header
 {
     display:grid;
     grid-column:2;
-    grid-template-columns:240px 120px 160px 230px 240px 500px 50px 40px 40px;
+    grid-template-columns:16% 7% 10% 10% 20% 26% 3% 3% 3%;
     grid-template-rows: 50px;
 }
 .head3
@@ -142,7 +142,7 @@ header
     height: 50px;
     transform: scale(.4);
     position: relative;
-    left: -35%;
+    left: -30%;
 }
 .you
 {
