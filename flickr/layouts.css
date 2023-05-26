@@ -278,7 +278,7 @@ button
     width: 21px;
     height: 24px;
     position: relative;
-    left:-170px;
+    left:-100px;
     visibility:hidden;
     border:none;
 }
@@ -2003,7 +2003,7 @@ h6
     .line5
     {
         display: flex;
-        width:48%;
+        width:60%;
         height:80px;
         font-size: 14px;
         flex-wrap: nowrap;
@@ -2012,7 +2012,7 @@ h6
     .line9
     {
         display: flex;
-        width:49%;
+        width:60%;
         height:80px;
         font-size: 14px;
         flex-wrap: nowrap;
