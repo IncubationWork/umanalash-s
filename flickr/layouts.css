@@ -73,7 +73,7 @@ header
 {
     display:grid;
     grid-column:2;
-    grid-template-columns:240px 120px 160px 230px 250px 500px 20px 50px 40px 50px;
+    grid-template-columns:240px 120px 160px 230px 240px 490px 10px 50px 40px 40px;
     grid-template-rows: 50px;
 }
 .head3
