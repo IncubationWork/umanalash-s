@@ -15,7 +15,7 @@
     background: rgba(233, 230, 230, 0.959);
     overflow-x: hidden;
     grid-template-rows: 60px 50px 50px 4fr;
-    grid-column: 1fr;
+    grid-template-columns : 1fr;
 }
 .sub-container1
 {
@@ -1823,7 +1823,7 @@ h6
     color:#000;
     background: gray;
 }
-@media (max-width:700px) 
+@media (max-width:600px) 
 {
     .main-container
     {
@@ -1832,8 +1832,8 @@ h6
         width:100vw;
         font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
         overflow-x: hidden;
-        grid-template-rows: 60px 50px 5fr;
-        grid-column: 1fr;
+        grid-template-rows: 60px 60px 5fr;
+        grid-template-columns: 1fr;
     }
     header
     {
@@ -1867,7 +1867,6 @@ h6
         grid-row: 1;
         z-index:33;
     }
-
     .menubar img{
         width: 32px;
         background: transparent;
@@ -1883,11 +1882,11 @@ h6
 
     .head4
     {
-         display:flex;
-         grid-column:1;
-         grid-row: 1;
-         position:relative;
-         right:39px;
+        display:flex;
+        grid-column:1;
+        grid-row: 1;
+        position:relative;
+        right:32px;
     }
     .content
     {
@@ -1977,6 +1976,7 @@ h6
         height: 26px;
         justify-content:start;
         position:relative;
+        right:20px;
         z-index:10;
     }
     .pic5
@@ -2015,7 +2015,7 @@ h6
         display: flex;
         justify-content: start;
         position: relative;
-        right:210px;
+        right:170px;
     }
     .line6,.line10, .line11, .line12, .line13, .line14, .line15,.line16 
     { 
