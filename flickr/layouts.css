@@ -278,6 +278,7 @@ button
     width: 21px;
     height: 24px;
     position: relative;
+    left:-8px;
     visibility:hidden;
     border:none;
 }
@@ -1998,10 +1999,18 @@ h6
     {
         display:none;
     }
-    .line5,.line9
+    .line5
     {
         display: flex;
-        width:30%;
+        width:45%;
+        height:80px;
+        align-items: end;
+        justify-content: space-between;
+    }
+    .line9
+    {
+        display: flex;
+        width:42%;
         height:80px;
         align-items: end;
         justify-content: space-between;
@@ -2016,6 +2025,7 @@ h6
         justify-content: start;
         position: relative;
         right:185px;
+        top:-3px;
     }
     .line6,.line10, .line11, .line12, .line13, .line14, .line15,.line16 
     { 
