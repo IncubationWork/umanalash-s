@@ -1823,7 +1823,7 @@ h6
     color:#000;
     background: gray;
 }
-@media  (max-width:750px) 
+@media  (max-width:730px) 
 {
     .main-container
     {
@@ -1962,12 +1962,11 @@ h6
         outline: none;
         transition-duration: 0.4s;
     }
-.search:focus~.cross
-{
-    visibility: visible;
-    z-index: 44;
-}
- 
+    .search:focus~.cross
+    {
+        visibility: visible;
+        z-index: 44;
+    }
     .pic4
     {
         grid-column:4;
@@ -1977,7 +1976,7 @@ h6
         height: 26px;
         justify-content:start;
         position:relative;
-        left:-10px;
+        left:10px;
         z-index:10;
     }
     .pic5
@@ -1987,7 +1986,7 @@ h6
         height:48px;
         width:48px;
         position: relative;
-        left:10px;
+        left:25px;
         z-index: 11;
     }
     .nav1 
