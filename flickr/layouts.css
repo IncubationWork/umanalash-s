@@ -278,7 +278,7 @@ button
     width: 21px;
     height: 24px;
     position: relative;
-    left:-66px;
+    left:-200px;
     visibility:hidden;
     border:none;
 }
@@ -2003,7 +2003,7 @@ h6
     .line5
     {
         display: flex;
-        width:100%;
+        width:70%;
         height:80px;
         align-items: end;
         justify-content: space-between;
@@ -2011,7 +2011,7 @@ h6
     .line9
     {
         display: flex;
-        width:100%;
+        width:70%;
         height:80px;
         align-items: end;
         justify-content: space-between;
