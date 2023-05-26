@@ -73,7 +73,7 @@ header
 {
     display:grid;
     grid-column:2;
-    grid-template-columns:240px 120px 160px 230px 500px 100px 50px 30px 50px;
+    grid-template-columns:240px 120px 160px 230px 250px 500px 10px 50px 40px 50px;
     grid-template-rows: 50px;
 }
 .head3
@@ -250,13 +250,13 @@ header
 .click
 {
     display:grid;
-    grid-column:5;
+    grid-column:6;
     grid-row: 1;
     justify-content:end;
 }
 input
 {
-    grid-column:5;
+    grid-column:6;
     grid-row: 1;
     font-size: 17px;
     align-self:center;
@@ -284,7 +284,7 @@ button
 }
 .icon-click
 {
-    grid-column:5;
+    grid-column:6;
     grid-row: 1;
     background-image:  url(spriteimages.png);
     background-position: -313px -232px; 
@@ -308,7 +308,7 @@ button
 }
 .search-click 
 {
-    grid-column:5;
+    grid-column:6;
     grid-row: 1;
     background: lightgray;
     cursor: pointer;
@@ -342,7 +342,7 @@ input[type=text]
 }
 .pic3
 {   
-    grid-column:7;
+    grid-column:8;
     grid-row: 1;
     background-image: url(spriteimages.png);
     background-position: -411px -447px; 
@@ -350,7 +350,6 @@ input[type=text]
     height: 25px;
     cursor: pointer;
     align-self: center;
-    justify-content: center;
 }
 .pic3:hover
 {
@@ -359,7 +358,7 @@ input[type=text]
 .pic4
 {
     background-image: url(spriteimages.png);
-    grid-column: 8;
+    grid-column: 9;
     grid-row: 1;
     background-position: -494px -417px; 
     width: 24px;
@@ -380,7 +379,7 @@ input[type=text]
     cursor: pointer;
     width:48px;
     border-radius: 27px;
-    grid-column: 9;
+    grid-column:10;
     grid-row: 1;
     align-self:start;
     transform: scale(.7);
@@ -502,7 +501,7 @@ nav
     display:flex;
     width:20%;
     height:50px;
-    padding-top: 25px;
+    align-items:center;
     cursor: pointer;
     gap:8px;
     flex-direction: row;
@@ -511,9 +510,9 @@ nav
 .colorpalette
 {
     display:flex;
-    width:45%;
+    width:500px;
     height:50px;
-    padding-top: 20px;
+    align-items: center;
     justify-content: end;
     gap:5px;
 }
@@ -732,9 +731,9 @@ nav
 .pattern
 {
     display:flex;
-    width:20%;
+    width:170px;
     height:50px;
-    padding-top: 20px;
+    align-items: center;
     justify-content: end;
 }
 
@@ -850,11 +849,11 @@ nav
     cursor: pointer;
     text-align: center;
   }
-.images
+.advanced
 {
     text-align: center;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     font-family:Arial, Helvetica, sans-serif;
     color:rgba(0, 0, 0, 0.528);
 }
@@ -870,13 +869,11 @@ nav
     padding: 5px;
   }
   
-  .images:hover .tooltip1{
+  .advanced:hover .tooltip1{
     visibility: visible;
   }
-.images{
+.advanced{
     position: relative;
-    display: inline-block;
-    text-align: center;
   }
 .toggle
 {
@@ -1153,7 +1150,7 @@ nav
 {
     display:flex;
     width:100%;
-    min-height: 50px;
+    min-height:130px;
     margin-top: 20px;
     background: white;
 }
@@ -1171,7 +1168,7 @@ nav
     display: flex;
     width:100%;
     height:18%;
-    font-size: 13px;
+    font-size: 15px;
     column-gap:1%;
     row-gap:1%;
     flex-wrap: wrap;
@@ -1196,8 +1193,8 @@ nav
     width: 18px;
     height: 9px;
     position:absolute;
-    left:55px;
-    top: 8px;
+    left:59px;
+    top: 10px;
     transform: scale(.6);
 }
 .forum div:hover
@@ -1400,7 +1397,7 @@ nav
 {   display: flex;
     width:100%;
     height:78px;
-    align-items: end;
+    align-items:end;
     justify-content: space-between;
     flex-direction: row;
 }
@@ -1456,12 +1453,12 @@ nav
 .con-wrap img
 {
     width:100%;
-    height:156px;
+    height:160px;
 }
 .text-wrap
 {
     width:100%;
-    height:156px;
+    height:160px;
     position:relative;
     top:-100%;
     cursor: pointer;
@@ -1470,7 +1467,7 @@ nav
 }
 .text-wrap p
 {
-    height:156px;
+    height:160px;
     text-align: center;
     padding-top:65px;
     background: rgba(0, 0, 0, 0.432);
