@@ -278,7 +278,7 @@ button
     width: 21px;
     height: 24px;
     position: relative;
-    left:-200px;
+    left:-300px;
     visibility:hidden;
     border:none;
 }
@@ -2003,18 +2003,24 @@ h6
     .line5
     {
         display: flex;
-        width:70%;
+        width:50%;
         height:80px;
+        font-size: 14px;
+        border:2px solid red;
         align-items: end;
-        justify-content: space-between;
     }
     .line9
     {
         display: flex;
-        width:70%;
+        width:50%;
+        border:2px solid green;
         height:80px;
+        font-size: 14px;
         align-items: end;
-        justify-content: space-between;
+    }
+    .strong
+    {
+        font-size: 13px;
     }
     .image3
     {
