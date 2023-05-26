@@ -278,7 +278,7 @@ button
     width: 21px;
     height: 24px;
     position: relative;
-    left:-8px;
+    left:-66px;
     visibility:hidden;
     border:none;
 }
@@ -1887,7 +1887,7 @@ h6
         grid-column:1;
         grid-row: 1;
         position:relative;
-        right:40px;
+        right:30px;
     }
     .content
     {
@@ -1955,9 +1955,10 @@ h6
    }
     .search:focus
     {
-        width:410px;
+        width:450px;
         border:none;
         z-index:15;
+        align-items: center;
         color:white;
         background:black;
         outline: none;
@@ -2002,7 +2003,7 @@ h6
     .line5
     {
         display: flex;
-        width:45%;
+        width:58%;
         height:80px;
         align-items: end;
         justify-content: space-between;
@@ -2010,7 +2011,7 @@ h6
     .line9
     {
         display: flex;
-        width:42%;
+        width:60%;
         height:80px;
         align-items: end;
         justify-content: space-between;
