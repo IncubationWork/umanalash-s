@@ -1823,7 +1823,7 @@ h6
     color:#000;
     background: gray;
 }
-@media  (max-width:730px) 
+@media (max-width:700px) 
 {
     .main-container
     {
@@ -1872,6 +1872,7 @@ h6
         width: 32px;
         background: transparent;
         height: 34px;
+        transform: scale(.6);
     }
     .head2
     {
@@ -1886,7 +1887,7 @@ h6
          grid-column:1;
          grid-row: 1;
          position:relative;
-         right:34px;
+         right:39px;
     }
     .content
     {
@@ -1976,7 +1977,6 @@ h6
         height: 26px;
         justify-content:start;
         position:relative;
-        left:10px;
         z-index:10;
     }
     .pic5
@@ -1986,7 +1986,6 @@ h6
         height:48px;
         width:48px;
         position: relative;
-        left:25px;
         z-index: 11;
     }
     .nav1 
@@ -2001,9 +2000,11 @@ h6
     }
     .line5,.line9
     {
-        width:100%;
+        display: flex;
+        width:70%;
         height:80px;
         align-items: end;
+        justify-content: space-between;
     }
     .image3
     {
@@ -2014,7 +2015,7 @@ h6
         display: flex;
         justify-content: start;
         position: relative;
-        right:100px;
+        right:210px;
     }
     .line6,.line10, .line11, .line12, .line13, .line14, .line15,.line16 
     { 
