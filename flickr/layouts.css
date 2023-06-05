@@ -5,7 +5,6 @@
     box-sizing: border-box;
     font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
 }
-
 .main-container
 {
     display:grid;
@@ -45,7 +44,6 @@
     grid-row: 4;
     grid-column: 1;
 }
-
 header
 {
     display:grid;
@@ -60,11 +58,6 @@ header
     top:0;
     z-index: 10;
 }
-.head1
-{
-    display:grid;
-    grid-column:1;
-}
 .menubar
 {
     display: none;
@@ -75,17 +68,6 @@ header
     grid-column:2;
     grid-template-columns:16% 7% 10% 10% 20% 26% 12%;
     grid-template-rows: 50px;
-}
-.head3
-{
-    display:grid;
-    grid-column:3;
-}
-.head4
-{
-    display:flex;
-    grid-column:1;
-    grid-row: 1;
 }
 .head5
 {
@@ -101,48 +83,41 @@ header
     grid-row: 1;
     justify-content: space-evenly;
 }
-
-.img:hover{
-    opacity: 0.8;
+.head4
+{
+    display:flex;
+    justify-content: start;
 }
-
 .pic1
 {
-   
     cursor: pointer;
     background-image: url(spriteimages.png);
     background-position: -150px -97px; 
     width: 43px;
     height: 43px;
     transform: scale(.3);
-    position: relative;
-    top:7%;
 }
 .pic2
 {
-    
     background-image: url(spriteimages.png);
     background-position: -197px -99px; 
     width: 43px;
     cursor: pointer;
-    height: 41px;
     transform: scale(.3);
-    position: relative;
-    left:-11%;
-    top:7%;
-    
+    height: 41px;
 }
 .logo
 {
-   
     background-image: url(spriteimages.png);
     background-position: 0px -233px; 
     width: 153px;
     cursor: pointer;
     height: 50px;
     transform: scale(.4);
-    position: relative;
-    left: -30%;
+}
+.img:hover
+{
+    opacity: 0.8;
 }
 .you
 {
@@ -152,7 +127,6 @@ header
     cursor: pointer;
     z-index: 3;
     line-height:3;
-  
 }
 .you:hover
 {   cursor: pointer;
@@ -160,8 +134,7 @@ header
 }
 .submenu1
 {
-   display:none;
-    
+   display:none; 
 }
 .menu:hover .submenu1 
 {
@@ -215,7 +188,6 @@ header
 }
 .explore
 {
-   
     color:white;
     cursor: pointer;
     line-height:3;
@@ -299,8 +271,6 @@ button
     left:3%;
     top:-1%;
 }
-
-
 .search-click::placeholder
 {
     position:relative;
@@ -318,7 +288,6 @@ button
     z-index: 1;
     height: 43px;
     transition: 0.5s linear;
-
 }
 .search-click:focus 
 {
@@ -327,7 +296,6 @@ button
     outline:none;
     transition-duration: 0.4s;
 }
-
 .search-click input
 {
     background:lightgray;
@@ -343,7 +311,6 @@ input[type=text]
 .last
 {
     display:flex;
-    
     grid-column: 7;
     grid-row: 1;
     align-items: center;
@@ -415,7 +382,6 @@ nav
     border-bottom:0.9px solid rgba(0, 0, 0, 0.278);
     cursor: pointer;
 }
-
 .nav1 ul li
 {
     display:inline-flex;
@@ -445,7 +411,6 @@ nav
 .people:hover
 {
     border-bottom: 3px solid rgb(0,145,220);
-    
 }
 .groups
 {
@@ -733,7 +698,6 @@ nav
     align-items: center;
     justify-content: end;
 }
-
 .img4
 {
     background-image:url(spriteimages.png);
@@ -741,7 +705,6 @@ nav
     width: 31px;
     cursor: pointer;
     height: 21px;
-    
 }
 .tooltip1 {
     visibility: hidden;
@@ -753,7 +716,6 @@ nav
     background-color: #192733;
     padding: 5px;
   }
-  
   .img4:hover .tooltip1{
     visibility: visible;
   }
@@ -780,7 +742,6 @@ nav
     background-color: #192733;
     padding: 5px;
   }
-  
   .img5:hover .tooltip1{
     visibility: visible;
   }
@@ -808,7 +769,6 @@ nav
     background-color: #192733;
     padding: 5px;
   }
-  
   .img6:hover .tooltip1{
     visibility: visible;
   }
@@ -836,7 +796,6 @@ nav
     font-size: 16px;
     background-color: #192733;
   }
-  
   .img7:hover .tooltip1{
     visibility: visible;
   }
@@ -865,7 +824,6 @@ nav
     background-color: #192733;
     padding: 5px;
   }
-  
   .advanced:hover .tooltip1{
     visibility: visible;
   }
@@ -874,7 +832,6 @@ nav
   }
 .toggle
 {
-    
     background-image:url(spriteimages.png);
     background-position: -404px -317px; 
     width: 22px;
@@ -891,7 +848,6 @@ nav
     background-color: #192733;
     padding: 5px;
   }
-  
   .toggle:hover .tooltip1{
     visibility: visible;
   }
@@ -961,7 +917,6 @@ nav
     display: flex;
     width:100%;
     gap:14px;
-    height:150px;
     flex-wrap: wrap;
 }
 .mac1 div
@@ -1007,7 +962,6 @@ nav
 }
 .soccer1
 {
-    
     display:flex;
     width:100%;
     cursor: pointer;
@@ -1021,7 +975,6 @@ nav
     display: flex;
     flex-direction:row;
     column-gap:20px;
-
 }
 .beach110
 {
@@ -1230,17 +1183,10 @@ nav
 {
     visibility: hidden;
 }
-.rightshare
-{
-    display: flex;
-    width: 40%;
-    height: 20px;
-    justify-content:center;
-}
 .right
-
-{   display:flex;
-    width:26%;
+{  
+    display:flex;
+    width:30%;
     height:20px;
     justify-content: space-between;
 }
@@ -1279,8 +1225,8 @@ nav
     width: 14px;
     cursor: pointer;
     height: 8px;
-    margin-top: 10px;
-    margin-right:14px;
+    margin-top:-13px;
+    margin-left: 70px;
     transform: scale(1.2);
 }
 .tooltext
@@ -1318,8 +1264,6 @@ nav
     display: inline-block;
     text-align: center;
   }
-
- 
 .image6
 {
     background-image: url(spriteimages.png);
@@ -1339,7 +1283,6 @@ nav
     background-color: #192733;
     padding: 5px;
   }
-  
   .image6:hover .tooltip{
     visibility: visible;
   }
@@ -1367,7 +1310,6 @@ nav
     background-color: #192733;
     padding: 5px;
   }
-  
   .image7:hover .tooltip{
     visibility: visible;
   }
@@ -1398,7 +1340,6 @@ nav
 }
 .lr2
 {
-
     display: flex;
     cursor: pointer;
     width:50%;
@@ -1514,7 +1455,6 @@ nav
 .view a:hover
 {
     text-decoration: underline;
-
 }
 .line6
 {
@@ -1531,7 +1471,6 @@ nav
     display:flex;
     justify-content: space-between;
 }
-
 .textwrap1 
 {
     width:100%;
@@ -1584,7 +1523,6 @@ nav
 {
     opacity: 1;
 }
-
 .line7
 {
     display: flex;
@@ -1612,7 +1550,6 @@ nav
 .view1 a:hover
 {
     text-decoration: underline;
-
 }
 .line8
 {
@@ -1628,7 +1565,6 @@ nav
     display:flex;
     justify-content: space-between;
 }
-
 .textwrap2
 {
     width:100%;
@@ -1687,7 +1623,6 @@ nav
 {
     opacity: 1;
 }
-
 .con-wrap1
 {
     width:100%;
@@ -1713,15 +1648,7 @@ h5
 {
     font-size: 15px;
 }
-h6
-{
-    font-size: 10px;
-}
-.leftline1
-{
-    font-size: 10px;
-}
-.rightline1
+h6,.leftline1,.rightline1
 {
     font-size: 10px;
 }
@@ -1751,14 +1678,11 @@ h6
 .one a:hover 
 {
     text-decoration: underline;
-    
 }
 .line10
 {
-
     width:100%;
     height:100rem;
-  
 }
 .line10 .img-tool4
 {
@@ -1860,7 +1784,6 @@ h6
         grid-column: 2;
         grid-template-columns:235px 20px 30px;
     }
-
     .head4
     {
         display:flex;
@@ -1896,8 +1819,8 @@ h6
     {
         display: grid;
         grid-row: 1;
-        grid-column: 2;
-        justify-content:center;
+        grid-column:2;
+        justify-content:end;
         align-items: center;
     }
     .icon
@@ -2002,16 +1925,27 @@ h6
     {
         font-size: 13px;
     }
-    .image3
+    .image3,.image4
     {
         visibility: visible;
     }
-    .right
+    .image4
     {
-        display: flex;
-        justify-content: start;
+        background-image: url(spriteimages.png);
+        background-position: -525px -106px; 
+        width: 14px;
+        cursor: pointer;
+        height: 8px;
+        transform: scale(1.2);
+    }
+    .right
+    {  
+        display:flex;
+        width:26%;
+        height:20px;
         position: relative;
-        right:185px;
+        right:232px;
+        justify-content:start;
         top:-3px;
     }
     .line6,.line10, .line11, .line12, .line13, .line14, .line15,.line16 
@@ -2019,13 +1953,7 @@ h6
         width:100%;
         height:130px;
     }
-    .rightshare
-    {
-        display: flex;
-        width: 40%;
-        height: 20px;
-        justify-content:space-around;
-    }
+
     .filter
     { 
         visibility: visible;

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    font-size:'Poppins',sans-serif;
+}
+body
+{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('pexel1.jpeg');
+    color:#fff;
+    background-size:contain;
+}
+.count 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p
+{
+    font-size: 12px;
+}
+.newyear
+{
+     font-size: 40px;
+     font-weight:400;
+     font-family:'Lobster';
+}
+.box
+{
+    width:50px;
+    height:50px;
+    text-align: center;
+
+}
+.box h2
+{
+    font-size: 20px;
+    font-family: 500;
+}
+.box small
+{
+    font-size:10px;
+}
+
+@media (min-width:676px)
+{
+ .newyear 
+ {
+    font-size:60px;
+ }
+ p
+{
+    font-size: 18px;
+}
+.box h2 
+{
+    font-size:30px;
+}
+.box
+{
+    width:70px;
+    height:70px;
+    text-align: center;
+}
+.box small
+{
+    font-size:15px;
+}
+}
+
+
+@media (min-width:829px)
+{
+.newyear 
+ {
+    font-size: 80px;
+ }
+ p
+{
+    font-size: 25px;
+}
+.box h2 
+{
+    font-size:50px;
+}
+.box
+{
+    width:100px;
+    height:100px;
+    text-align: center;
+}
+.box small
+{
+    font-size:20px;
+}
+}
