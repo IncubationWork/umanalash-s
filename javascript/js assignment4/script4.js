@@ -73,7 +73,117 @@ let Productlists = [
             size:['S','M','L','XL','XXL'],
             type:'Salwar'
         }
-    }
+    },
+    {
+        id:007,
+        name:'Croptops-Lightmarron',
+        price:1000,
+        image:'croptops.jpeg',
+        nature: 
+        {
+            color:['Lightmaroon'],
+            size:['S','M','L','XL','XXL'],
+            type:'Croptops'
+        }
+    },
+    {
+        id:010,
+        name:'Jean-Blue',
+        price:800,
+        image:'jean.jpeg',
+        nature: 
+        {
+            color:['Blue'],
+            size:['S','M','L','XL','XXL'],
+            type:'Jean'
+        }
+    },
+    {
+        id:011,
+        name:'Longtops-Darkblue',
+        price:1900,
+        image:'longtops1.jpeg',
+        nature: 
+        {
+            color:['Darkblue'],
+            size:['S','M','L','XL','XXL'],
+            type:'Longtops'
+        }
+    },
+    {
+        id:012,
+        name:'Jeantop-Pink-Blue',
+        price:800,
+        image:'jean top.jpeg',
+        nature: 
+        {
+            color:['Pink','Blue'],
+            size:['S','M','L','XL','XXL'],
+            type:'Jeantop'
+        }
+    },
+    {
+        id:013,
+        name:'Choli-Skyblue',
+        price:20000,
+        image:'choli1.jpeg',
+        nature: 
+        {
+            color:['Skyblue'],
+            size:['S','M','L','XL','XXL'],
+            type:'Choli'
+        }
+    },
+    {
+        id:014,
+        name:'Jumpsuit-Gray',
+        price:2000,
+        image:'jumpsuit.jpeg',
+        nature: 
+        {
+            color:['Gray'],
+            size:['S','M','L','XL','XXL'],
+            type:'Jumpsuit'
+        }
+    },
+    {
+        id:015,
+        name:'Sleepwear-Navyblue',
+        price:1000,
+        image:'sleepwear.jpeg',
+        nature: 
+        {
+            color:['Navyblue'],
+            size:['S','M','L','XL','XXL'],
+            type:'Sleepwear'
+        }
+    },
+    {
+        id:016,
+        name:'Wedding Frock-White',
+        price:50000,
+        image:'wfrock.jpg',
+        nature: 
+        {
+            color:['White'],
+            size:['S','M','L','XL','XXL'],
+            type:'Wedding Frock'
+        }
+    },   
+     {
+        id:017,
+        name:'Palasa-White-Green',
+        price:2200,
+        image:'palasa.jpeg',
+        nature: 
+        {
+            color:['White','Green'],
+            size:['S','M','L','XL','XXL'],
+            type:'Palasa'
+        }
+    },
+  
+    
 ]
 
 console.log(Productlists);
@@ -108,9 +218,9 @@ filter.addEventListener('submit',function(event)
     let valueFilter = event.target.elements;
     productFilter = Productlists.filter(item =>
         {
-            if(valueFilter.category.value != '')
+            if(valueFilter.lists.value != '')
             {
-                if(item.nature.type !=valueFilter.category.value)
+                if(item.nature.type !=valueFilter.lists.value)
                 {
                     return false;
                 }
