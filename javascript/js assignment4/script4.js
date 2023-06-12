@@ -225,13 +225,6 @@ filter.addEventListener('submit',function(event)
                     return false;
                 }
             }
-            if(valueFilter.color.value != '')
-            {
-                if(item.nature.color.includes(valueFilter.color.value))
-                {
-                    return false;
-                }
-            }
             if(valueFilter.Price.value != '')
             {
                 if(item.price > valueFilter.Price.value)
