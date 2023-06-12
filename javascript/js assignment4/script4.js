@@ -234,7 +234,7 @@ filter.addEventListener('submit',function(event)
             }
             if(valueFilter.Price.value != '')
             {
-                if(item.price < valueFilter.Price.value)
+                if(item.price > valueFilter.Price.value)
                 {
                     return false;
                 }
