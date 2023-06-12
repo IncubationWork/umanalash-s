@@ -28,7 +28,7 @@ h1
     justify-content: center;
     font-family: 'Merienda', cursive;
     font-size: 45px;
-    width:100vw;
+    width:100%;
     color: #fff;
     background:purple;
 }
@@ -118,14 +118,14 @@ body
 {
     width:100vw;
     height:100vh;
-    background:pink;
+    background:lavender;
     display:flex;
     flex-direction: column;
     row-gap:10px;
     align-items: center;font-family:"Poppins", sans-serif;
     background-image: 
               linear-gradient(
-                to bottom right,#EFD7F4);
+                to bottom right,lavender);
                 overflow-x: hidden;
     margin:0;    
 }
@@ -135,7 +135,7 @@ h1
     justify-content: center;
     font-family: 'Merienda', cursive;
     font-size: 25px;
-    width:100vw;
+    width:100%;
     color: #fff;
     background:purple;
 }
@@ -144,7 +144,8 @@ h1
     background:lavender;
     padding: 10px;
     display: grid;
-    width:80%;
+    width:100%;
+    margin: auto;
     align-items:start;
 }
 .filter
