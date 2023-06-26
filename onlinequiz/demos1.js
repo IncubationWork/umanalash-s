@@ -1,11 +1,9 @@
 class Person {
-    constructor(name,age,sex)
-    {
+    constructor(name,age,sex){
         this.name = name;
         this.age = age;
         this.sex = sex;
-    }
-    
+    } 
     getVoiceType(){
         if(this.age===26 && this.sex === "male"){
             return "tenor";
@@ -18,13 +16,12 @@ class Person {
         }
     }
 }
-class Employee extends Person {
-    constructor(name,age,sex,id)
-        {
-            super(name,age,sex)
-            this.id = id;
-        }
+class Employee extends Person{
+    constructor(name,age,sex,id){
+        super(name,age,sex)
+        this.id = id;
     }
+}
 let a = new Employee("rahul",26,"male",1);
 let b = new Employee("ara",24,"female",2);
 let c = new Employee("ragav",53,"male",3);
