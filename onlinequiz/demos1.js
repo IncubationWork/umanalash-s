@@ -7,7 +7,7 @@ class Person {
             }
     
      getVoiceType(){
-        if(this.age=26 && this.sex === "male")
+        if(this.age===26 && this.sex === "male")
         {
             return "tenor";
         }
