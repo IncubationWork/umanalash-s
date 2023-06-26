@@ -45,7 +45,7 @@ class Triangle extends Shape {
     constructor(height,width){
         super();
         this.height = height;
-        this.width = width;
+        this.base = base;
     }
     getArea(){
         return Math.PI ** 2; 
