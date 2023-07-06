@@ -1,6 +1,15 @@
-fetch("quiz.json")
-.then(response => response.json())
-.then(data1 => showInfo(data1));
-function showInfo(data1) {
-  console.table(data1)
-}
+// DOM elements
+
+// Fetch quiz data and initialize the quiz
+fetchQuizData()
+  .then(() => {
+    loadQuestion(); // Load the first question
+  })
+  .catch(error => {
+    console.error('Failed to fetch quiz data:', error);
+  });
+
+
+
+submitButton.style.visibility = 'hidden';
+submitButton.addEventListener('click', showResults);

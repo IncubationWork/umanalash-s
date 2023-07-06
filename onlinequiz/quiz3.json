@@ -1,0 +1,87 @@
+{
+    "Quiz3" :
+    [
+        {
+            "Question" : "Which country is also known as the 'Land of Rising Sun'?",
+            "Answer" :
+                    {
+                        "Answer1" : "Japan",
+                        "Answer2" : "China",
+                        "Answer3" : "Fiji"
+                    },
+            "correctAnswer" : "Answer1"
+
+        },
+        {
+            "Question" : "Which country is known as the 'Land of Thunderbolts'?",
+            "Answer" :
+                    {
+                        "Answer1" : "Thailand",
+                        "Answer2" : "Mongolia",
+                        "Answer3" : "Bhutan"
+                    },
+            "correctAnswer" : "Answer3"
+        },
+        {  
+            "Question" : "Which continent has the highest number of countries?",
+            "Answer" : 
+                    {
+                        "Answer1" : "Africa",
+                        "Answer2" : "Asia",
+                        "Answer3" : "Europe"
+                    },
+                    "correctAnswer" : "Answer1"
+        },
+        {
+            "Question" : "The world's longest straight road without any corners is located in ",
+            "Answer" :
+                    {
+                        "Answer1" : "USA",
+                        "Answer2" : "Saudi Arabia",
+                        "Answer3" : "Australia"
+                    },
+            "correctAnswer" : "Answer2"
+        },
+        {       
+            "Question" : "In which year Hong Kong became a part of China after British Rule?",
+            "Answer" :
+                    {
+                        "Answer1" : "1997",
+                        "Answer2" : "1995",
+                        "Answer3" : "1989"
+                    },
+            "correctAnswer" : "Answer1"
+        },
+        {
+            "Question" : "Which one is the smallest ocean in the World?",
+            "Answer" :
+                    {
+                        "Answer1" : "Pacific",
+                        "Answer2" : "Arctic",
+                        "Answer3" : "Atlantic"
+                    },
+            "correctAnswer" : "Answer2"
+
+        },
+        {
+            "Question" : "Which one is the largest tropical rain forest in the world?",
+            "Answer" : 
+                    {
+                        "Answer1" : "Bosawas",
+                        "Answer2" : "Daintree Rain Forest",
+                        "Answer3" : "Amazon"
+                    },
+            "correctAnswer" : "Answer3"
+        },
+        {
+            "Question" : "Which one is the biggest island in the world?",
+            "Answer" : 
+                    {
+                        "Answer1" : "Greenland",
+                        "Answer2" : "Finland",
+                        "Answer3" : "Borneo"
+                    },
+            "correctAnswer" : "Answer1"
+        }
+    ]
+}

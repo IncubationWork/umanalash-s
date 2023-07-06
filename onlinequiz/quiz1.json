@@ -1,0 +1,91 @@
+{
+  "Quiz1" : 
+    [    
+        {
+            "Question" : " What is the latest version of HTML?",
+            "Answer" :
+                    {
+                        "Answer1" : "<!DOCTYPE html>",
+                        "Answer2" : "<!DOCTYPE html5>",
+                        "Answer3" : "<!DOCTYPE html6>"
+                    },
+            "correctAnswer" : "Answer2"
+        },  
+        {
+            "Question" : "What is the use of br tag?",
+            "Answer" : 
+                    {
+                        "Answer1" : "To break the line",
+                        "Answer2" : "To break the statement",
+                        "Answer3" : "To break the another tag"
+                    },
+            "correctAnswer" : "Answer1"
+        },
+        {
+            "Question" : "How many types in list?",
+            "Answer" : 
+                    {
+                        "Answer1" : "2",
+                        "Answer2" : "3",
+                        "Answer3" : "4"
+                    },
+            "correctAnswer" : "Answer2"
+
+        },
+        {
+            "Question" :"How to write a header in HTML?",
+            "Answer" :
+                    {
+                        "Answer1" : "<head>",
+                        "Answer2" : "<header>",
+                        "Answer3" : "<hr>"
+                    },
+            "correctAnswer" : "Answer2"
+
+        },
+        {
+            "Question" : "How to mention the title tag?",
+            "Answer" : 
+                    {
+                        "Answer1" : "<title>",
+                        "Answer2" : "<tl>",
+                        "Answer3" : "<td>"
+                    },
+            "correctAnswer" : "Answer1"
+
+        },
+        {
+            "Question" : "Click the odd one out:",
+            "Answer" : 
+                    {
+                        "Answer1" : "<header>",
+                        "Answer2" : "<title>",
+                        "Answer3" : "<border>"
+                    },
+            "correctAnswer" : "Answer3"
+
+        },
+        {
+            "Question" : "How to use the videos in HTML?",
+            "Answer" : 
+                    {
+                        "Answer1" : "<video>",
+                        "Answer2" : "<audio>",
+                        "Answer3" : "<media>"
+                    },
+            "correctAnswer" : "Answer1"
+
+        },
+        {
+            "Question" : "How to use the table tag?",
+            "Answer" : 
+                    { 
+                        "Answer1" : "<tr>",
+                        "Answer2" : "<td>",
+                        "Answer3" : "<table>"
+                    },
+            "correctAnswer" : "Answer3"
+
+        }
+    ]
+}

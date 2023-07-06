@@ -1,0 +1,85 @@
+{
+    "Quiz2" :
+    [
+        {
+            "Question" : "Choose the Vijay movie:",
+            "Answer" : 
+                    {
+                        "Answer1" : "Beast",
+                        "Answer2" : "Anjaan",
+                        "Answer3" : "Aaru"
+                    },
+            "correctAnswer" : "Answer1"
+        },
+        {
+            "Question" : "Who was the first producer of Arya-Mathavan starrer \"VETTAI\"?",
+            "Answer" : 
+                    {
+                        "Answer1" : "Udhayanithi Stalin",
+                        "Answer2" : "Dhayanidhi Alagiri",
+                        "Answer3" : "Director Shankar"
+                    },
+            "correctAnswer": "Answer2"
+        },
+        {
+            "Question" : "Who are the three heroes in the Tamil remake of DELHI BELLY?",
+            "Answer" :
+                    {
+                        "Answer1" : "Arya-Sandhanam-Premgi",
+                        "Answer2" : "Arya-Jiiva-Premgi",
+                        "Answer3" : "Arya-Santhanam-Nassar"
+                    },
+            "correctAnswer" : "Answer1"
+        },
+        {
+            "Question" : "Which was the first Indian and Tamil film,that had bought make-up men from USA?",
+            "Answer" : 
+                    {
+                       "Answer1" : "Jeans",
+                       "Answer2" : "Indian",
+                       "Answer3" : "Gentleman"
+                    },
+            "correctAnswer" :"Answer2"
+        },
+        {
+            "Question" : "Which Tamil blockbuster was dubbed and released in Telugu as\"RANGAM\"?",
+            "Answer" : 
+                    {
+                        "Answer1" : "Ayan",
+                        "Answer2" : "Mankatha",
+                        "Answer3" : "Ko"
+                    },
+            "correctAnswer" : "Answer3"
+        },
+        {
+            "Question" : "Who is the only actor in Indian cinema to give 5 mega-hits in the year 1982 including Tamil and Hindi?",
+            "Answer" :
+                    {
+                        "Answer1" : "Ranjinikanth",
+                        "Answer2" : "Kamal Haasan",
+                        "Answer3" : "Mohan Lal"
+                    },
+            "correctAnswer" :"Answer2"
+        },
+        {
+            "Question" : "For which movie did actor Surya get more number of awards from various association?",
+            "Answer" : 
+                    {
+                        "Answer1"  :"Perazhagan",
+                        "Answer2"  :"Vaaranam Aayiram",
+                        "Answer3"  :"Ghajini"
+                    },
+            "correctAnswer" : "Answer2"
+        },
+        {
+            "Question" : "Who is the youngest music composer joining the film industry at the age of 16?",
+            "Answer" :
+                    {
+                        "Answer1" : "Harris Jeyaraj",
+                        "Answer2" : "G.V.Prakash",
+                        "Answer3" : "Yuvan Shankar Raja"
+                    },
+            "correctAnswer" : "Answer3"
+        }
+    ]
+}

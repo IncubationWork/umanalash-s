@@ -1,0 +1,101 @@
+#quiz-container {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #question {
+    font-size: 20px;
+  }
+  
+  #options {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .option {
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  #submit-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #submit-btn:hover {
+    background-color: #2980b9;
+  }
+  
+
+/*fetch("quiz2.json")
+.then(response => response.json())
+.then(data3 => showInfo(data3));
+function showInfo(data3) {
+  console.table(data3)
+}*/
+
+/*const questionElement = document.getElementById('question');
+const optionsElement = document.getElementById('options');
+const submitButton = document.getElementById('submit-btn');
+
+let quizData;
+
+// Fetch quiz data from JSON file
+function fetchQuizData() {
+  fetch('quiz2.json')
+    .then(response => response.json())
+    .then(data1 => {
+      quizData = data1;
+      displayQuestion();
+    })
+    .catch(error => {
+      console.log('Error fetching quiz data:', error);
+    });
+}
+
+function displayQuestion() {
+  const currentQuestion = quizData.questions[quizData.currentQuestionIndex];
+  questionElement.textContent = currentQuestion.question;
+  optionsElement.innerHTML = '';
+
+  currentQuestion.options.forEach((option, index) => {
+    const li = document.createElement('li');
+    li.className = 'option';
+    li.textContent = option;
+    li.setAttribute('data1-index', index);
+    optionsElement.appendChild(li);
+  });
+}
+
+function checkAnswer(selectedIndex) {
+  const currentQuestion = quizData.questions[quizData.currentQuestionIndex];
+  if (selectedIndex === currentQuestion.correctAnswer) {
+    quizData.score++;
+  }
+}
+
+function nextQuestion() {
+  quizData.currentQuestionIndex++;
+  if (quizData1.currentQuestionIndex < quizData1.questions.length) {
+    displayQuestion();
+  } else {
+    // Display final score or redirect to a result page
+    alert('Quiz completed! Your score: ' + quizData.score);
+  }
+}
+
+optionsElement.addEventListener('click', function(event) {
+  if (event.target.matches('.option')) {
+    const selectedIndex = parseInt(event.target.getAttribute('data-index'));
+    checkAnswer(selectedIndex);
+    nextQuestion();
+  }
+});
+
+fetchQuizData();*/
+
