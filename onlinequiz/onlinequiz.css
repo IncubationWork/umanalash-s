@@ -13,7 +13,7 @@ body {
     display:grid;
     width:100%;
     height: 100%;
-   
+    gap:180px;
 }
 .wrapper {
     width:100%;
@@ -125,7 +125,7 @@ sub {
         flex-wrap: wrap;
         width:100%;
         height:auto;
-        font-size: 30px;
+        font-size: 25px;
         place-content: center;
         z-index:1;
         justify-content:center;

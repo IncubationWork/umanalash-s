@@ -1,5 +1,3 @@
-// DOM elements
-
 // Fetch quiz data and initialize the quiz
 fetchQuizData()
   .then(() => {
@@ -8,8 +6,6 @@ fetchQuizData()
   .catch(error => {
     console.error('Failed to fetch quiz data:', error);
   });
-
-
 
 submitButton.style.visibility = 'hidden';
 submitButton.addEventListener('click', showResults);

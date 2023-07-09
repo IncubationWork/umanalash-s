@@ -11,10 +11,12 @@ function  loadQuestion() {
   
     if (selectedValue === correctAnswer) {
       selectedOption.classList.add('correct');
+      resultA2.style.background = "white";
       resultA2.textContent = 'Correct!';
       incrementScore();
     } else {
       selectedOption.classList.add('incorrect');
+      resultA2.style.background = "white";
       resultA2.textContent = `Incorrect. The correct answer is: ${currentQuestionData.Answer[correctAnswer]}`;
     }
   

@@ -67,7 +67,7 @@ label {
 }
 button {
   border:1px solid black;
-  background: rgba(255, 0, 0, 0.411);
+  background: rgba(245, 98, 81, 0.696);
   color:white;
   cursor: pointer;
   font-size: 19px;
@@ -82,13 +82,11 @@ button {
 #result {
   font-size: 24px;
   font-weight: bold;
-  background: #fff;
   padding: 5px;
 }
 .correct {
   background-color:#3cb043;
 }
-
 .incorrect {
   background-color: #ff0000;
 }
