@@ -100,7 +100,7 @@ sub {
     font-size: 17px;
     visibility: hidden;
 }
-@media (max-width:650px) {
+@media (max-width:480px) {
     body {
         width:100vw;
         height:100vh;
