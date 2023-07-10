@@ -15,9 +15,6 @@ body {
 h1 {
   display: grid;
   justify-content: center;
-  color:black;
-  margin: auto;
-  width:440px;
 }
 h2 {
   padding:7px;
@@ -31,8 +28,7 @@ h2 {
   gap:40px;
 }
 .que {
-  width:500px;
-  height:300px;
+  width:100%;
   display: grid;
   justify-content: center;
   align-items: center;
