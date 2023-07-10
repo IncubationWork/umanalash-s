@@ -28,8 +28,7 @@ h2 {
   gap:30px;
 }
 .que {
-  width:500px;
-  height:300px;
+  width:100%;
   display: grid;
   justify-content: center;
   border-radius: 10px;
@@ -101,8 +100,8 @@ button {
     box-sizing: border-box;
   }
   body {
-    width:100vw;
-    height:100vh;
+    width:50vw;
+    height:50vh;
     background: url(book3.jpg);
     background-size: cover;
     display: grid;
