@@ -114,7 +114,7 @@ button {
     justify-content: center;
   }
   h2 {
-    padding:7px;
+    padding:4px;
   }
   .questions {
     display: grid;
@@ -122,14 +122,14 @@ button {
     align-items: center;
     cursor:pointer;
     padding: 10px;
-    gap:30px;
+    gap:20px;
   }
   .que {
     width:100%;
     display: grid;
     justify-content: center;
     align-items: center;
-    gap:40px;
+    gap:20px;
     border-radius: 10px;
     border:2px solid blue;
     background: rgba(216, 191, 216, 0.573);
