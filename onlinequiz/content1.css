@@ -98,8 +98,8 @@ button {
     box-sizing: border-box;
   }
   body {
-    width:50vw;
-    height:50vh;
+    width:75vw;
+    height:100vh;
     background-image: url(book1.jpg);
     background-size:cover;
     display: grid;

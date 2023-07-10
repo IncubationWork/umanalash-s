@@ -28,7 +28,7 @@ h2 {
   gap:40px;
 }
 .que {
-  width:100%;
+  width:500px;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -100,8 +100,8 @@ button {
     box-sizing: border-box;
   }
   body {
-    width:50vw;
-    height:50vh;
+    width:80vw;
+    height: 100vh;
     background:url(book2.jpg)no-repeat;
     background-size: cover;
     display: grid;
@@ -111,8 +111,6 @@ button {
   h1 {
     display: grid;
     justify-content: center;
-    color:black;
-    margin: auto;
   }
   h2 {
     padding:7px;

@@ -2,12 +2,12 @@
     "Quiz2" :
     [
         {
-            "Question" : "Choose the Vijay movie:",
+            "Question" : "In which movie, did comedian Santhanam make his debut?",
             "Answer" : 
                     {
-                        "Answer1" : "Beast",
-                        "Answer2" : "Anjaan",
-                        "Answer3" : "Aaru"
+                        "Answer1" : "Manmadhan",
+                        "Answer2" : "Vallavan",
+                        "Answer3" : "Rendu"
                     },
             "correctAnswer" : "Answer1"
         },
