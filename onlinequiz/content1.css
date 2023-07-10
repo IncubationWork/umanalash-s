@@ -98,7 +98,7 @@ button {
     box-sizing: border-box;
   }
   body {
-    width:75vw;
+    width:100vw;
     height:100vh;
     background-image: url(book1.jpg);
     background-size:cover;
