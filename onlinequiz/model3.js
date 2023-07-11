@@ -3,7 +3,7 @@ let currentQuestion = 0;
 let score = 0;
 
 async function fetchQuizData() {
-    const response = await fetch("quiz3.json");
+    const response = await fetch("quiz1.json");
     const data3 = await response.json();
     quizData3 = data3.Quiz3;
 }
