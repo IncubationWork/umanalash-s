@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.contain {
+    /*background: rgba(238, 211, 216, 0.787);*/
+    background: rgb(179, 220, 236);
+}
+
+.element {
+    display: grid;
+    width:100vw;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    overflow-x: hidden;
+}

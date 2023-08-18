@@ -1,0 +1,54 @@
+<div class="locate">
+  <label for="location">Location:</label>
+  <input type="text" id="location" [(ngModel)]="location" (keyup.enter)="searchWeather()" placeholder="Enter location">
+  <button (click)="searchWeather()">Search</button>
+</div>
+<div class="container">
+  <div class="image">
+    <h1>Weather Forecasting</h1>
+    <div class="wrap">
+      <img  alt="" width="120px" height="120px"
+      *ngIf="temperatureData.weather?.current_weather?.temperature >= 25"
+      src="../assets/images/sun2.png">
+      <img  alt="" width="120px" height="120px"
+      *ngIf="temperatureData.weather?.current_weather?.temperature <=15"
+      src="../assets/images/rain1.png">
+      <img  alt="" width="120px" height="100px"
+      *ngIf="temperatureData.weather?.current_weather?.temperature <=25 && temperatureData.weather?.current_weather?.temperature >15"
+      src="../assets/images/cloud.png">
+      
+      <div *ngIf="temperatureData.weather" class="weathers">
+        <p class="temp">{{ temperatureData.weather.current_weather.temperature}}°C</p>
+      </div>
+      <div *ngIf="weatherData" class="weather">
+        <p class="time">{{weatherData.results?.[0].name}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="weatherData" class="weather">
+      <h2>Location Details</h2>
+  </div>
+
+  <div *ngIf="weatherData" class="weather">
+    <p>Timezone: {{weatherData.results?.[0].timezone}}</p>
+    <p>Country: {{ weatherData.results?.[0].country }}</p>
+  </div>
+  <div *ngIf="weatherData" class="weather">
+    <h2>Weather Details</h2>
+  </div>
+  <div *ngIf="weatherData" class="weather">
+    <p>Latitude: {{weatherData.results?.[0].latitude}}</p>
+    <p>Longitude: {{weatherData.results?.[0].longitude}}</p>
+    <p>Population:{{weatherData.results?.[0].population}}</p>
+    <p>Elevation:{{weatherData.results?.[0].elevation}}</p>
+  </div>
+
+  <div *ngIf="temperatureData.weather" class="weathers">
+     <!-- <p>Time:{{temperatureData.weather.current_weather.time}}</p>-->
+      <p>WeatherCode:{{temperatureData.weather.current_weather.weathercode}}</p>
+      <p>Wind Speed:{{temperatureData.weather.current_weather.windspeed}}km/hr</p>
+      <p>Wind Direction:{{temperatureData.weather.current_weather.winddirection}}°</p>
+      <p>Humidity:{{temperatureData.weather.hourly.relativehumidity_2m[0]}}%</p>
+  </div>
+</div>
