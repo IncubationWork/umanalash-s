@@ -1,16 +1,20 @@
 <div class="locate">
   <label for="location">Location:</label>
-  <input type="text" id="location" [(ngModel)]="location" (keyup.enter)="searchWeather()" placeholder="Enter location">
+  <input type="searchbox" id="location" [(ngModel)]="location" (keyup.enter)="searchWeather()" (input)="changePlace(location)" placeholder="Enter location">
   <button (click)="searchWeather()">Search</button>
 </div>
+<ul *ngIf="filteredPlace.length > 0">
+  <li *ngFor="let place of filteredPlace" (click)="selectPlace(location)"></li>
+</ul>
 <div class="container">
   <div class="image">
     <h1>Weather Forecasting</h1>
     <div class="wrap">
+
       <img  alt="" width="120px" height="120px"
       *ngIf="temperatureData.weather?.current_weather?.temperature >= 25"
       src="../assets/images/sun2.png">
-      <img  alt="" width="120px" height="120px"
+      <img  alt="" width="130px" height="130px"
       *ngIf="temperatureData.weather?.current_weather?.temperature <=15"
       src="../assets/images/rain1.png">
       <img  alt="" width="120px" height="100px"
@@ -25,6 +29,7 @@
       </div>
     </div>
   </div>
+  <div class="date">Date: {{date| date}}</div>
 
   <div *ngIf="weatherData" class="weather">
       <h2>Location Details</h2>
@@ -45,10 +50,13 @@
   </div>
 
   <div *ngIf="temperatureData.weather" class="weathers">
-     <!-- <p>Time:{{temperatureData.weather.current_weather.time}}</p>-->
-      <p>WeatherCode:{{temperatureData.weather.current_weather.weathercode}}</p>
+      <p>WeatherCode:{{ getWeatherDescription(temperatureData.weather.current_weather.weathercode)}}</p>
       <p>Wind Speed:{{temperatureData.weather.current_weather.windspeed}}km/hr</p>
       <p>Wind Direction:{{temperatureData.weather.current_weather.winddirection}}°</p>
       <p>Humidity:{{temperatureData.weather.hourly.relativehumidity_2m[0]}}%</p>
+
   </div>
+  
 </div>
+
+

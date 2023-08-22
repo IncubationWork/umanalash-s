@@ -1,0 +1,15 @@
+
+<div class="side-bar">
+  <button id="left-arrow" (click)="moveBox('left')"></button>
+  <div class="sidebar-container" *ngIf = "temperatureData && sidebarData">
+    <div class="box"*ngFor="let boxData of boxDatas; let i = index" [ngClass]="{'move-left':moveLeft, 'move-right':moveRight}">
+      <div class="date">{{ weekDates[i] | date }}</div>
+      <p class="temp">{{ temperatureData?.weather?.hourly.temperature_2m[i] }}°C</p>
+      <p class="temp">{{ temperatureData?.weather?.hourly.relativehumidity_2m[i] }}%</p>
+
+    </div>
+
+  </div>
+  <button id="right-arrow" (click)="moveBox('right')"></button>
+
+</div>
