@@ -7,7 +7,7 @@ import { ShareService } from '../share.service';
   styleUrls: ['./weather.component.css']
 })
 export class WeatherComponent implements OnInit {
-  location:string = 'tenkasi';
+  location:string = 'Thenkasi';
   latitude:number=0;
   longitude:number=0;
   temperatureData:any={};
@@ -15,13 +15,24 @@ export class WeatherComponent implements OnInit {
   date=new Date();
   filteredPlace:any[]=[];
   count:any[]=[];
-
+  startDate: string = ''; 
+  endDate: string = '';
   constructor(
     private weatherservice: WeatherService,private shareService: ShareService) { }
 
-ngOnInit(): void {
-  this.searchWeather();
-}
+    ngOnInit(): void {
+      this.startDate = this.getFormattedDate(new Date()); 
+      this.endDate = this.getFormattedDate(new Date()); 
+      this.searchWeather();
+    }
+    getFormattedDate(date: Date): string {
+      const year = date.getFullYear();
+      const month = (date.getMonth() + 1).toString().padStart(2, '0');
+      const day = date.getDate().toString().padStart(2, '0');
+      console.log(date);
+
+      return `${year}-${month}-${day}`;
+    }
     searchWeather() {
       this.weatherservice.getWeatherData(this.location,10).subscribe(res => {
         this.weatherData = res;
@@ -34,8 +45,8 @@ ngOnInit(): void {
           
         this.shareService.setLocation(this.location); 
 
-          this.weatherservice.getCoordinates(this.latitude, this.longitude).subscribe(response => {
-            this.temperatureData.weather = response;
+          this.weatherservice.getCoordinates(this.latitude, this.longitude,this.startDate,this.endDate).subscribe(response => {
+            this.temperatureData = response;
             this.location = this.weatherData.results[0].name;
             this.shareService.setTemperatureData(this.temperatureData);
             this.shareService.setWeatherData(res);

@@ -2,27 +2,27 @@
   <label for="location">Location:</label>
   <input type="searchbox" id="location" [(ngModel)]="location" (keyup.enter)="searchWeather()" (input)="changePlace(location)" placeholder="Enter location">
   <button (click)="searchWeather()">Search</button>
+  
 </div>
-<ul *ngIf="filteredPlace.length > 0">
-  <li *ngFor="let place of filteredPlace" (click)="selectPlace(location)"></li>
-</ul>
+
+
 <div class="container">
   <div class="image">
     <h1>Weather Forecasting</h1>
     <div class="wrap">
 
       <img  alt="" width="120px" height="120px"
-      *ngIf="temperatureData.weather?.current_weather?.temperature >= 25"
+      *ngIf="temperatureData.current_weather?.temperature >= 25"
       src="../assets/images/sun2.png">
       <img  alt="" width="130px" height="130px"
-      *ngIf="temperatureData.weather?.current_weather?.temperature <=15"
+      *ngIf="temperatureData.current_weather?.temperature <=15"
       src="../assets/images/rain1.png">
       <img  alt="" width="120px" height="100px"
-      *ngIf="temperatureData.weather?.current_weather?.temperature <=25 && temperatureData.weather?.current_weather?.temperature >15"
+      *ngIf="temperatureData.current_weather?.temperature <=25 && temperatureData.current_weather?.temperature >15"
       src="../assets/images/cloud.png">
       
-      <div *ngIf="temperatureData.weather" class="weathers">
-        <p class="temp">{{ temperatureData.weather.current_weather.temperature}}°C</p>
+      <div *ngIf="temperatureData" class="weathers">
+        <p class="temp">{{ temperatureData?.current_weather?.temperature}}°C</p>
       </div>
       <div *ngIf="weatherData" class="weather">
         <p class="time">{{weatherData.results?.[0].name}}</p>
@@ -49,11 +49,11 @@
     <p>Elevation:{{weatherData.results?.[0].elevation}}</p>
   </div>
 
-  <div *ngIf="temperatureData.weather" class="weathers">
-      <p>WeatherCode:{{ getWeatherDescription(temperatureData.weather.current_weather.weathercode)}}</p>
-      <p>Wind Speed:{{temperatureData.weather.current_weather.windspeed}}km/hr</p>
-      <p>Wind Direction:{{temperatureData.weather.current_weather.winddirection}}°</p>
-      <p>Humidity:{{temperatureData.weather.hourly.relativehumidity_2m[0]}}%</p>
+  <div *ngIf="temperatureData" class="weathers">
+      <p>WeatherCode:{{ getWeatherDescription(temperatureData?.current_weather?.weathercode)}}</p>
+      <p>Wind Speed:{{temperatureData?.current_weather?.windspeed}}km/hr</p>
+      <p>Wind Direction:{{temperatureData?.current_weather?.winddirection}}°</p>
+      <p>Humidity:{{temperatureData?.hourly?.relativehumidity_2m[0]}}%</p>
 
   </div>
   
