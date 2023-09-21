@@ -1,0 +1,8 @@
+<div id="label">
+<h1>Slider</h1>
+<div id="container">
+<input type="range"  min="0" max="100" [(ngModel)] = 'name'>
+<input type="number" value = '{{name}}' [ngStyle] = "{'font-size':name + 'px','color':color}">
+<input type="color" [(ngModel)] = "color" >
+</div>
+</div>
